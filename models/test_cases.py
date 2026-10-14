@@ -2,7 +2,6 @@ from sqlalchemy import Column, Integer, String, Text
 
 from database import Base
 
-
 class TestCase(Base):
 
     __tablename__ = "test_cases"
