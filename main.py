@@ -82,7 +82,7 @@ def main():
         for case in test_cases:
             print(
                 f"{case['test_case_id']} | "
-                f"Input: {case['input']} | "
+                f"Input size: {len(case['input'])} | "
                 f"Expected output: {case['output']}"
             )
 

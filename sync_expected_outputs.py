@@ -1,13 +1,42 @@
 import sys
+import additional_solvers as extra
 from collections import Counter
 
 from psycopg2.extras import Json
 from postgres_client import get_connection
 import calculate_expected_outputs as calc
 
+def generate_parentheses(x):
+    n = x["n"]
+    result = []
 
+    def backtrack(current, opened, closed):
+        if len(current) == 2 * n:
+            result.append(current)
+            return
+
+        if opened < n:
+            backtrack(current + "(", opened + 1, closed)
+
+        if closed < opened:
+            backtrack(current + ")", opened, closed + 1)
+
+    backtrack("", 0, 0)
+    return result
 # Reuse the reference functions already in your project.
 SOLVERS = {
+        "Merge Sorted Array": lambda inp: (
+        sorted(inp["nums1"][:inp["m"]] + inp["nums2"][:inp["n"]])
+    ),
+
+    "Linked List Cycle": lambda inp: (
+        inp["pos"] != -1 and inp["pos"] < len(inp["vals"])
+    ),
+
+    "Time Needed to Buy Tickets": lambda inp: sum(
+        max(0, min(t, inp["tickets"][inp["k"]] - (1 if i > inp["k"] else 0)))
+        for i, t in enumerate(inp["tickets"])
+    ),
     "Search in Rotated Sorted Array":
         lambda x: calc.search_rotated_array(x["nums"], x["target"]),
     "Game of Life":
@@ -46,6 +75,9 @@ SOLVERS = {
         lambda x: calc.count_common_words(x["words1"], x["words2"]),
     "Minimum Remove to Make Valid Parentheses":
         lambda x: calc.min_remove_to_make_valid(x["s"]),
+    "Generate Parentheses": generate_parentheses,
+
+    "Sliding Window Maximum": lambda x: extra.sliding_window_maximum(x["nums"], x["k"]),
 }
 
 
@@ -53,6 +85,30 @@ SOLVERS = {
 import additional_solvers as extra
 
 SOLVERS.update({
+    "Reaching Points": lambda x: extra.reaching_points(x["sx"], x["sy"], x["tx"], x["ty"]),
+
+    "Subdomain Visit Count": lambda x: extra.subdomain_visit_count(x["cpdomains"]),
+"IPO": lambda x: extra.ipo(
+    x["k"],
+    x.get("w", x.get("initial_capital")),
+    x["profits"],
+    x["capital"],
+),
+    "Valid Sudoku":
+        lambda x: extra.valid_sudoku(x["board"]),
+    "Add Two Numbers":
+        lambda x: extra.add_two_numbers(x["l1"], x["l2"]),
+    "Evaluate Division":
+        lambda x: extra.evaluate_division(
+            x["equations"], x["values"], x["queries"]
+        ),
+    
+    "LRU Cache":
+        lambda x: extra.lru_cache(
+            operations=x.get("operations", x.get("commands")),
+            params=x.get("params", x.get("args")),
+        ),
+
     "Trapping Rain Water":
         lambda x: extra.trapping_rain_water(x.get("height",x.get("nums"))),
     "First Missing Positive":
@@ -73,138 +129,146 @@ SOLVERS.update({
         lambda x: extra.add_strings(x["num1"], x["num2"]),
     "Longest Cycle in a Graph":
         lambda x: extra.longest_cycle(x["edges"]),
+
+    "Merge Intervals":
+        lambda x: extra.merge_intervals(x["intervals"]),
+    "Find the Index of the First Occurrence in a String":
+        lambda x: extra.find_first_occurrence(x["haystack"], x["needle"]),
+    "Remove Element":
+        lambda x: extra.remove_element(x["nums"], x["val"]),
+    "Longest Consecutive Sequence":
+        lambda x: extra.longest_consecutive_sequence(x["nums"]),
+    "Find Words That Can Be Formed by Characters":
+        lambda x: extra.count_characters(x["words"], x["chars"]),
+    "Ransom Note":
+        lambda x: extra.can_construct_ransom_note(
+            x["ransomNote"], x["magazine"]
+        ),
+    "Best Time to Buy and Sell Stock":
+        lambda x: extra.max_profit_stock(x["prices"]),
+
+    "Clear Digits":
+        lambda x: extra.clear_digits(x["s"]),
+    "Largest Palindromic Number":
+        lambda x: extra.largest_palindromic_number(x["num"]),
+    "Longest Subarray With Maximum Bitwise AND":
+        lambda x: extra.longest_subarray_max_bitwise_and(x["nums"]),
+    "Longest Unequal Adjacent Groups Subsequence I":
+        lambda x: extra.longest_unequal_adjacent_groups(x["words"], x["groups"]),
+    "Maximum Number of Balls in a Box":
+        lambda x: extra.maximum_balls_in_box(x["lowLimit"], x["highLimit"]),
+    "Zigzag Conversion":
+        lambda x: extra.zigzag_conversion(x["s"], x["numRows"]),
+    "Sqrt(x)":
+        lambda x: extra.sqrt_x(x["x"]),
+    "Integer to Roman":
+        lambda x: extra.integer_to_roman(x["num"]),
+
+    "Generate Parentheses": generate_parentheses,
+   
+       
 })
 
+
 def main():
+    from collections import Counter
+    from problem_registry import PROBLEM_NAMES
+
     apply_changes = "--apply" in sys.argv
-
-    import json
-
-    input_path = "output/all_200_generated_test_cases.json"
-
-    with open(input_path, encoding="utf-8") as f:
-        data = json.load(f)
-
-    cases = data["test_cases"]
     counts = Counter()
     unsupported_names = Counter()
     errors = []
     pending_results = []
 
     print("Mode:", "WRITE TO AIVEN" if apply_changes else "DRY RUN")
-    print("Cases in JSON:", len(cases))
+    print("Source of truth: Aiven/PostgreSQL")
+    print("JSON file required: No")
     print("Reference implementations:", len(SOLVERS))
 
-    # Calculate locally first; no database writes happen in this loop.
-    for case in cases:
-        name = case.get("problem_name", "")
-        solver = SOLVERS.get(name)
-
-        if solver is None:
-            counts["unsupported"] += 1
-            unsupported_names[name] += 1
-            continue
-
-        try:
-            result = solver(case.get("input", {}))
-
-            # Do not confuse an unreturned result with a valid JSON null.
-            if result is None:
-                counts["no_result"] += 1
-                errors.append({
-                    "problem": name,
-                    "test_case_id": case.get("test_case_id"),
-                    "error": "Reference function returned None; not saved."
-                })
-                continue
-
-            pending_results.append((
-                case["problem_id"],
-                case["test_case_id"],
-                result,
-                name,
-            ))
-            counts["calculated"] += 1
-
-        except Exception as exc:
-            counts["errors"] += 1
-            if len(errors) < 20:
-                errors.append({
-                    "problem": name,
-                    "test_case_id": case.get("test_case_id"),
-                    "error": str(exc),
-                })
-
     conn = get_connection()
-
     try:
         with conn.cursor() as cursor:
+            cursor.execute("""
+                SELECT problem_id, test_case_id, category, pattern, input_data
+                FROM test_cases.generated_test_cases
+                WHERE output_data IS NULL
+                ORDER BY problem_id, test_case_id
+            """)
+            cases = cursor.fetchall()
+
+            print("Pending cases in Aiven:", len(cases))
+
+            for problem_id, case_id, category, pattern, test_input in cases:
+                name = PROBLEM_NAMES.get(problem_id, "")
+                solver = SOLVERS.get(name)
+
+                if solver is None:
+                    counts["unsupported"] += 1
+                    unsupported_names[name or problem_id] += 1
+                    continue
+
+                try:
+                    result = solver(test_input or {})
+
+                    # Do not save None as an expected output.
+                    if result is None:
+                        counts["no_result"] += 1
+                        if len(errors) < 20:
+                            errors.append({
+                                "problem": name,
+                                "test_case_id": case_id,
+                                "error": "Solver returned None; output not saved."
+                            })
+                        continue
+
+                    pending_results.append(
+                        (problem_id, case_id, result, name)
+                    )
+                    counts["calculated"] += 1
+
+                except Exception as exc:
+                    counts["errors"] += 1
+                    if len(errors) < 20:
+                        errors.append({
+                            "problem": name or problem_id,
+                            "test_case_id": case_id,
+                            "error": str(exc)
+                        })
+
             for problem_id, case_id, result, name in pending_results:
                 cursor.execute("""
-                    SELECT output_data
+                    SELECT 1
                     FROM test_cases.generated_test_cases
                     WHERE problem_id = %s
                       AND test_case_id = %s
-                    LIMIT 1;
+                      AND (
+                          output_data IS NULL
+                      )
+                    FOR UPDATE
                 """, (problem_id, case_id))
 
-                row = cursor.fetchone()
-
-                if row is None:
-                    counts["not_found_in_db"] += 1
-                    continue
-
-                existing_output = row[0]
-
-                # Skip existing outputs; handle SQL NULL and JSON null.
-                if existing_output is not None and existing_output != None:
-                    # JSON null is returned as Python None by psycopg2,
-                    # so use a direct database condition for the decision.
-                    pass
-
-                cursor.execute("""
-                    SELECT (
-                        output_data IS NULL
-                        OR output_data = 'null'::jsonb
-                    )
-                    FROM test_cases.generated_test_cases
-                    WHERE problem_id = %s
-                      AND test_case_id = %s;
-                """, (problem_id, case_id))
-
-                is_pending = cursor.fetchone()[0]
-
-                if not is_pending:
-                    counts["already_has_output"] += 1
+                if cursor.fetchone() is None:
+                    counts["changed_or_missing"] += 1
                     continue
 
                 counts["matched_pending"] += 1
 
                 if apply_changes:
+                    # Change only output_data; preserve review statuses.
                     cursor.execute("""
                         UPDATE test_cases.generated_test_cases
-                        SET output_data = %s,
-                            is_valid = %s,
-                            validation_reason = %s
+                        SET output_data = %s
                         WHERE problem_id = %s
                           AND test_case_id = %s
                           AND (
                               output_data IS NULL
-                              OR output_data = 'null'::jsonb
-                          );
-                    """, (
-                        Json(result),
-                        "Needs Review",
-                        "Calculated using a local reference implementation; "
-                        "independent validation is pending.",
-                        problem_id,
-                        case_id,
-                    ))
+                          )
+                    """, (Json(result), problem_id, case_id))
 
                     if cursor.rowcount == 1:
                         counts["saved"] += 1
                     else:
-                        counts["skipped_during_update"] += 1
+                        counts["changed_or_missing"] += 1
 
         if apply_changes:
             conn.commit()
@@ -218,30 +282,24 @@ def main():
         conn.close()
 
     print("\n--- SUMMARY ---")
-    print("Calculated locally:", counts["calculated"])
-    print("Matched pending rows in Aiven:", counts["matched_pending"])
-    print("Saved to Aiven:", counts["saved"])
-    print("Unsupported cases:", counts["unsupported"])
-    print("Calculation errors:", counts["errors"])
-    print("No result returned:", counts["no_result"])
-    print("IDs not found in Aiven:", counts["not_found_in_db"])
-    print("Rows already containing output:", counts["already_has_output"])
-    print("Rows skipped during update:", counts["skipped_during_update"])
+    for key in (
+        "calculated", "matched_pending", "saved", "unsupported",
+        "errors", "no_result", "changed_or_missing"
+    ):
+        print(f"{key.replace('_', ' ').title()}:", counts[key])
 
     if unsupported_names:
-        print("\nUnsupported problem names (first 20):")
-        for name, count in unsupported_names.most_common(20):
-            print(f"{name}: {count}")
+        print("\nUnsupported problem names/IDs:")
+        for name, count in unsupported_names.most_common():
+            print(f"  {name}: {count}")
 
     if errors:
-        print("\nExamples of errors:")
-        for error in errors[:10]:
-            print(error)
+        print("\nErrors (first 20):")
+        for error in errors:
+            print(" ", error)
 
     if not apply_changes:
         print("\nDRY RUN ONLY: nothing was saved.")
-        print("If the results look correct, run:")
-        print("python sync_expected_outputs.py --apply")
 
 
 if __name__ == "__main__":
