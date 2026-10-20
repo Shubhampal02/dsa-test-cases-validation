@@ -1,0 +1,7074 @@
+[
+  {
+    "problem_id": "634dd126-6074-4c1f-9c0e-1eac866d5d05",
+    "problem_name": "Search in Rotated Sorted Array",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "target_found_first_sample"
+      },
+      {
+        "category": "sample",
+        "pattern": "target_not_found_second_sample"
+      },
+      {
+        "category": "sample",
+        "pattern": "single_element_array_target_not_found_third_sample"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_array_target_found"
+      },
+      {
+        "category": "edge",
+        "pattern": "two_element_array_target_found"
+      },
+      {
+        "category": "edge",
+        "pattern": "two_element_array_target_not_found"
+      },
+      {
+        "category": "edge",
+        "pattern": "array_not_rotated_target_found"
+      },
+      {
+        "category": "edge",
+        "pattern": "array_rotated_by_one_target_found"
+      },
+      {
+        "category": "edge",
+        "pattern": "array_rotated_n_minus_one_times_target_found"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_is_pivot_value_found"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_is_largest_value_before_pivot_found"
+      },
+      {
+        "category": "boundary",
+        "pattern": "target_is_first_element_of_rotated_array_found"
+      },
+      {
+        "category": "boundary",
+        "pattern": "target_is_last_element_of_rotated_array_found"
+      },
+      {
+        "category": "boundary",
+        "pattern": "target_value_at_minimum_constraint_found"
+      },
+      {
+        "category": "boundary",
+        "pattern": "target_value_at_maximum_constraint_found"
+      },
+      {
+        "category": "boundary",
+        "pattern": "array_length_maximum_target_found_at_middle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "array_length_maximum_target_not_found"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_in_left_sorted_segment_after_mid_found"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_in_right_sorted_segment_after_mid_found"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_not_found_between_segments"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_not_found_outside_value_range"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_target_found_at_beginning"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_target_found_at_end"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_target_not_found"
+      }
+    ]
+  },
+  {
+    "problem_id": "7a20d895-a548-48d9-85bc-4e792828daec",
+    "problem_name": "Game of Life",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_board"
+      },
+      {
+        "category": "edge",
+        "pattern": "board_all_zeros"
+      },
+      {
+        "category": "edge",
+        "pattern": "board_all_ones"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_live_cell_on_board"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_dead_cell_on_board"
+      },
+      {
+        "category": "boundary",
+        "pattern": "min_row_max_col_board"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_row_min_col_board"
+      },
+      {
+        "category": "basic",
+        "pattern": "live_cell_underpopulation_test"
+      },
+      {
+        "category": "basic",
+        "pattern": "live_cell_survival_test"
+      },
+      {
+        "category": "basic",
+        "pattern": "live_cell_overpopulation_test"
+      },
+      {
+        "category": "basic",
+        "pattern": "dead_cell_reproduction_test"
+      },
+      {
+        "category": "basic",
+        "pattern": "dead_cell_remains_dead_test"
+      },
+      {
+        "category": "basic",
+        "pattern": "cells_on_border_conditions"
+      },
+      {
+        "category": "basic",
+        "pattern": "blinker_pattern_oscillator"
+      },
+      {
+        "category": "basic",
+        "pattern": "block_pattern_stable"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_board_complex_pattern"
+      }
+    ]
+  },
+  {
+    "problem_id": "a070cccc-0f61-474a-91e4-acb906b16b61",
+    "problem_name": "Flatten Binary Tree to Linked List",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_tree"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_node_tree"
+      },
+      {
+        "category": "basic",
+        "pattern": "left_skewed_tree"
+      },
+      {
+        "category": "basic",
+        "pattern": "right_skewed_tree"
+      },
+      {
+        "category": "basic",
+        "pattern": "full_binary_tree"
+      },
+      {
+        "category": "basic",
+        "pattern": "general_unbalanced_tree"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_nodes"
+      }
+    ]
+  },
+  {
+    "problem_id": "32f60938-9993-41da-a5af-7c076f1500ab",
+    "problem_name": "Basic Calculator",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "simple_addition"
+      },
+      {
+        "category": "sample",
+        "pattern": "mixed_operations_with_whitespace"
+      },
+      {
+        "category": "sample",
+        "pattern": "nested_parentheses_complex"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_subtraction"
+      },
+      {
+        "category": "basic",
+        "pattern": "multi_digit_numbers"
+      },
+      {
+        "category": "basic",
+        "pattern": "expression_with_leading_trailing_whitespace"
+      },
+      {
+        "category": "basic",
+        "pattern": "parentheses_with_single_operation"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_operations_without_parentheses"
+      },
+      {
+        "category": "basic",
+        "pattern": "expression_with_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_number_expression"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_number_in_parentheses"
+      },
+      {
+        "category": "edge",
+        "pattern": "expression_starting_with_parenthesis"
+      },
+      {
+        "category": "edge",
+        "pattern": "expression_ending_with_parenthesis"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_whitespace_expression"
+      },
+      {
+        "category": "edge",
+        "pattern": "result_is_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "result_is_negative"
+      },
+      {
+        "category": "boundary",
+        "pattern": "deeply_nested_parentheses"
+      },
+      {
+        "category": "boundary",
+        "pattern": "maximum_sequence_of_operations_without_parentheses"
+      },
+      {
+        "category": "boundary",
+        "pattern": "parentheses_around_entire_expression"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_number_of_tokens"
+      }
+    ]
+  },
+  {
+    "problem_id": "990f2eaf-3454-421f-b5f2-1e257b68cca8",
+    "problem_name": "Race Car",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "target_is_zero"
+      },
+      {
+        "category": "basic",
+        "pattern": "smallest_positive_target"
+      },
+      {
+        "category": "basic",
+        "pattern": "smallest_negative_target"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_is_power_of_2_minus_1"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_requiring_complex_strategy"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_positive_target"
+      },
+      {
+        "category": "boundary",
+        "pattern": "min_negative_target"
+      },
+      {
+        "category": "boundary",
+        "pattern": "target_near_max_positive"
+      },
+      {
+        "category": "boundary",
+        "pattern": "target_near_min_negative"
+      }
+    ]
+  },
+  {
+    "problem_id": "83f9760e-884d-43ad-a93f-e6add599b021",
+    "problem_name": "Number of Divisible Substrings",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "general_case"
+      },
+      {
+        "category": "sample",
+        "pattern": "all_zeros_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_digit_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_divisible_substrings_found"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_substrings_divisible_by_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "substrings_starting_with_leading_zeros_and_non_zero_value"
+      },
+      {
+        "category": "boundary",
+        "pattern": "substring_evaluates_to_zero"
+      },
+      {
+        "category": "boundary",
+        "pattern": "substring_value_is_exactly_k"
+      },
+      {
+        "category": "boundary",
+        "pattern": "substring_value_is_multiple_of_k"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_s_length_with_mixed_digits"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_s_length_all_zeros_string"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_k_value"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_s_length_and_max_k_value"
+      }
+    ]
+  },
+  {
+    "problem_id": "b1b0c72a-b96c-4bea-bb0a-c6e42d796eda",
+    "problem_name": "Design a 3D Binary Matrix with Efficient Layer Tracking",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "minimum_n_value"
+      },
+      {
+        "category": "edge",
+        "pattern": "first_z_index_operation"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_zeros_layer"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_ones_layer"
+      },
+      {
+        "category": "boundary",
+        "pattern": "maximum_n_value"
+      },
+      {
+        "category": "boundary",
+        "pattern": "last_valid_z_index_operation"
+      },
+      {
+        "category": "boundary",
+        "pattern": "overwrite_existing_layer"
+      },
+      {
+        "category": "boundary",
+        "pattern": "retrieve_uninitialized_slice"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_layers_mixed_values"
+      },
+      {
+        "category": "basic",
+        "pattern": "sequential_operations"
+      },
+      {
+        "category": "negative",
+        "pattern": "z_index_less_than_zero"
+      },
+      {
+        "category": "negative",
+        "pattern": "z_index_greater_or_equal_to_n"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_distinct_layers_filled"
+      },
+      {
+        "category": "stress",
+        "pattern": "many_mixed_operations_high_n"
+      }
+    ]
+  },
+  {
+    "problem_id": "221d241f-00ba-4cdd-bbc5-cfc5dba46430",
+    "problem_name": "Backspace String Compare",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_string_input"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "string_becomes_empty"
+      },
+      {
+        "category": "edge",
+        "pattern": "backspace_on_empty_string"
+      },
+      {
+        "category": "boundary",
+        "pattern": "maximum_length_strings"
+      },
+      {
+        "category": "boundary",
+        "pattern": "one_max_one_min_length"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_backspaces"
+      },
+      {
+        "category": "basic",
+        "pattern": "some_backspaces"
+      },
+      {
+        "category": "basic",
+        "pattern": "strings_remain_unequal"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_strings_many_backspaces"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_strings_mixed_content"
+      }
+    ]
+  },
+  {
+    "problem_id": "9d2b6435-c75d-4b51-82b8-bd095124e1f1",
+    "problem_name": "Second Highest Salary",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "multiple_distinct_salaries_second_highest_exists"
+      },
+      {
+        "category": "sample",
+        "pattern": "duplicate_highest_salary_second_highest_is_also_duplicate"
+      },
+      {
+        "category": "sample",
+        "pattern": "single_entry_table_returns_null"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_salaries_are_identical"
+      },
+      {
+        "category": "boundary",
+        "pattern": "salaries_include_zero"
+      },
+      {
+        "category": "boundary",
+        "pattern": "second_highest_is_zero"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_distinct_salaries_no_duplicates"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_salaries_with_duplicates_and_second_highest"
+      }
+    ]
+  },
+  {
+    "problem_id": "5b9e801d-fd24-449e-b472-ee0da3d79c5d",
+    "problem_name": "Build Array Where You Can Find The Maximum Exactly K Comparisons",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "k_equals_n"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_n_minus_1"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_1"
+      },
+      {
+        "category": "edge",
+        "pattern": "n_equals_1"
+      },
+      {
+        "category": "basic",
+        "pattern": "nums_with_distinct_elements"
+      },
+      {
+        "category": "basic",
+        "pattern": "nums_with_duplicate_elements"
+      },
+      {
+        "category": "basic",
+        "pattern": "nums_with_single_unique_element"
+      },
+      {
+        "category": "boundary",
+        "pattern": "all_possible_sums_can_be_formed"
+      },
+      {
+        "category": "boundary",
+        "pattern": "limited_number_of_distinct_sums"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_n_and_k"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_sums_possible"
+      }
+    ]
+  },
+  {
+    "problem_id": "5ef5c5f8-c31b-46e1-b6a7-1866863b73ca",
+    "problem_name": "Generate Parentheses",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "n_is_zero"
+      },
+      {
+        "category": "sample",
+        "pattern": "n_equals_one_example"
+      },
+      {
+        "category": "sample",
+        "pattern": "n_equals_three_example"
+      },
+      {
+        "category": "boundary",
+        "pattern": "maximum_n_value"
+      }
+    ]
+  },
+  {
+    "problem_id": "8d40878a-6f12-4764-af70-75655003a7fd",
+    "problem_name": "Rotate String",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "basic",
+        "pattern": "rotatable_strings"
+      },
+      {
+        "category": "basic",
+        "pattern": "non_rotatable_strings"
+      },
+      {
+        "category": "edge",
+        "pattern": "different_lengths"
+      },
+      {
+        "category": "edge",
+        "pattern": "s_and_goal_identical"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_character_strings"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_same_characters"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_length_matching"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_length_non_matching"
+      }
+    ]
+  },
+  {
+    "problem_id": "916ec5bd-62d0-4f1a-9633-3e576f57d0e0",
+    "problem_name": "Construct the Minimum Bitwise Array II",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "minimum_n_value"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_n_value"
+      },
+      {
+        "category": "basic",
+        "pattern": "intermediate_n_value"
+      }
+    ]
+  },
+  {
+    "problem_id": "9f005dba-2a55-4fc2-959c-2724a6ad80f5",
+    "problem_name": "Construct the Minimum Bitwise Array I",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "basic",
+        "pattern": "smallest_n_to_satisfy_both_conditions"
+      },
+      {
+        "category": "sample",
+        "pattern": "given_example_n_equals_5"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_n_value"
+      }
+    ]
+  },
+  {
+    "problem_id": "255cffb3-1562-4a11-b76f-11152551adb7",
+    "problem_name": "Maximum Subarray",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "basic",
+        "pattern": "typical_mixed_positive_and_negative"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_positive_numbers"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_negative_numbers"
+      },
+      {
+        "category": "edge",
+        "pattern": "array_containing_zeros"
+      },
+      {
+        "category": "boundary",
+        "pattern": "elements_at_maximum_value"
+      },
+      {
+        "category": "boundary",
+        "pattern": "elements_at_minimum_value"
+      },
+      {
+        "category": "boundary",
+        "pattern": "mixed_extreme_values"
+      },
+      {
+        "category": "boundary",
+        "pattern": "alternating_values_leading_to_small_sum"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_length_all_positive_values"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_length_all_negative_values"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_length_mixed_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "13ee088a-934d-492c-8840-b4bed60d81b2",
+    "problem_name": "Classifying Triangles by Lengths",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "equilateral_triangle"
+      },
+      {
+        "category": "basic",
+        "pattern": "isosceles_triangle"
+      },
+      {
+        "category": "basic",
+        "pattern": "scalene_triangle"
+      },
+      {
+        "category": "basic",
+        "pattern": "clear_triangle_inequality_violation"
+      },
+      {
+        "category": "edge",
+        "pattern": "degenerate_triangle_sum_equals_third_side"
+      },
+      {
+        "category": "edge",
+        "pattern": "isosceles_like_configuration_violating_triangle_inequality"
+      },
+      {
+        "category": "edge",
+        "pattern": "smallest_possible_valid_triangle_sides_for_each_type"
+      },
+      {
+        "category": "edge",
+        "pattern": "permutations_of_sides_for_same_triangle_type"
+      },
+      {
+        "category": "boundary",
+        "pattern": "all_sides_at_minimum_constraint"
+      },
+      {
+        "category": "boundary",
+        "pattern": "all_sides_at_maximum_constraint"
+      },
+      {
+        "category": "boundary",
+        "pattern": "mixed_min_max_constraints_for_valid_triangle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "mixed_min_max_constraints_for_invalid_triangle"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_distinct_sides_forming_a_valid_triangle"
+      }
+    ]
+  },
+  {
+    "problem_id": "131ec0de-f52c-4193-8a89-9ecc87205b79",
+    "problem_name": "Minimize OR of Remaining Elements Using Operations",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_elements_are_zero"
+      },
+      {
+        "category": "basic",
+        "pattern": "array_contains_zero_with_others"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_elements_are_same_positive"
+      },
+      {
+        "category": "basic",
+        "pattern": "distinct_powers_of_two"
+      },
+      {
+        "category": "basic",
+        "pattern": "elements_are_submasks_of_others"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_distinct_positive_values_requiring_selection"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_all_distinct_large_values"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_mixed_values_with_duplicates_and_zeros"
+      },
+      {
+        "category": "boundary",
+        "pattern": "elements_near_maximum_allowed_value"
+      }
+    ]
+  },
+  {
+    "problem_id": "79e160c6-cdec-435a-aae6-091a1429fead",
+    "problem_name": "Two Sum",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "min_length_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "solution_involving_first_and_last_elements"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_positive_and_negative_numbers"
+      },
+      {
+        "category": "basic",
+        "pattern": "array_with_zero_value"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_is_zero"
+      },
+      {
+        "category": "basic",
+        "pattern": "solution_in_middle_of_array"
+      },
+      {
+        "category": "basic",
+        "pattern": "array_with_identical_values_at_different_indices"
+      },
+      {
+        "category": "boundary",
+        "pattern": "elements_near_min_value_limit"
+      },
+      {
+        "category": "boundary",
+        "pattern": "elements_near_max_value_limit"
+      },
+      {
+        "category": "boundary",
+        "pattern": "target_near_min_sum_limit"
+      },
+      {
+        "category": "boundary",
+        "pattern": "target_near_max_sum_limit"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_length_array"
+      }
+    ]
+  },
+  {
+    "problem_id": "914c048c-f58f-44d1-9ed0-249921ad0ef4",
+    "problem_name": "Valid Parentheses",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "minimum_valid_length"
+      },
+      {
+        "category": "edge",
+        "pattern": "minimum_invalid_length"
+      },
+      {
+        "category": "boundary",
+        "pattern": "odd_length_string"
+      },
+      {
+        "category": "boundary",
+        "pattern": "all_opening_brackets"
+      },
+      {
+        "category": "boundary",
+        "pattern": "all_closing_brackets"
+      },
+      {
+        "category": "basic",
+        "pattern": "valid_nested_brackets"
+      },
+      {
+        "category": "basic",
+        "pattern": "valid_sequential_brackets"
+      },
+      {
+        "category": "basic",
+        "pattern": "valid_mixed_nested_sequential"
+      },
+      {
+        "category": "basic",
+        "pattern": "invalid_mismatched_type"
+      },
+      {
+        "category": "basic",
+        "pattern": "invalid_incorrect_order"
+      },
+      {
+        "category": "basic",
+        "pattern": "invalid_unclosed_brackets"
+      },
+      {
+        "category": "basic",
+        "pattern": "invalid_unopened_brackets"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_length_valid_string"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_length_invalid_string"
+      }
+    ]
+  },
+  {
+    "problem_id": "cebd0bf1-e20a-427e-9857-78e41bba6ff0",
+    "problem_name": "Merge Sorted Array",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_total"
+      },
+      {
+        "category": "edge",
+        "pattern": "nums1_all_smaller"
+      },
+      {
+        "category": "edge",
+        "pattern": "nums2_all_smaller"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_elements_identical"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_total_length_m_half_n_half"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_m_min_n"
+      },
+      {
+        "category": "boundary",
+        "pattern": "min_m_max_n"
+      },
+      {
+        "category": "boundary",
+        "pattern": "extreme_values_negative"
+      },
+      {
+        "category": "boundary",
+        "pattern": "extreme_values_positive"
+      },
+      {
+        "category": "basic",
+        "pattern": "general_interleaving_with_some_duplicates"
+      }
+    ]
+  },
+  {
+    "problem_id": "1ac3fd90-56ae-446a-b055-3bc36877d423",
+    "problem_name": "Reverse Integer",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "positive_multi_digit_no_trailing_zeros"
+      },
+      {
+        "category": "basic",
+        "pattern": "negative_multi_digit_no_trailing_zeros"
+      },
+      {
+        "category": "basic",
+        "pattern": "positive_with_trailing_zeros"
+      },
+      {
+        "category": "basic",
+        "pattern": "negative_with_trailing_zeros"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_input"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_digit_positive"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_digit_negative"
+      },
+      {
+        "category": "edge",
+        "pattern": "palindrome_input"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_int_value_overflow"
+      },
+      {
+        "category": "boundary",
+        "pattern": "min_int_value_overflow"
+      },
+      {
+        "category": "boundary",
+        "pattern": "positive_input_causes_overflow"
+      },
+      {
+        "category": "boundary",
+        "pattern": "negative_input_causes_overflow"
+      },
+      {
+        "category": "boundary",
+        "pattern": "positive_input_max_reversed_no_overflow"
+      },
+      {
+        "category": "boundary",
+        "pattern": "negative_input_min_reversed_no_overflow"
+      }
+    ]
+  },
+  {
+    "problem_id": "d928bc2d-3129-4913-8f55-636609f1cffd",
+    "problem_name": "Longest Substring Without Repeating Characters",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_character"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_repeating_characters"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_repeating_characters"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_repeating_characters"
+      },
+      {
+        "category": "edge",
+        "pattern": "unicode_characters"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_string_all_same_char"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_string_alternating_chars"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_string_no_repeats"
+      }
+    ]
+  },
+  {
+    "problem_id": "983a434a-df70-46fa-a368-57f16fb20683",
+    "problem_name": "Merge Intervals",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_list"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_interval"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_overlapping_intervals"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_overlapping_intervals"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_overlapping_intervals"
+      },
+      {
+        "category": "edge",
+        "pattern": "intervals_touching_at_endpoints"
+      },
+      {
+        "category": "edge",
+        "pattern": "intervals_contained_within_others"
+      },
+      {
+        "category": "edge",
+        "pattern": "intervals_with_same_start_or_end"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_intervals"
+      },
+      {
+        "category": "stress",
+        "pattern": "intervals_with_large_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "01d8893f-8c38-4711-bd88-ee16bde2c998",
+    "problem_name": "Trapping Rain Water",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_bar"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_trapped_water_flat_terrain"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_container"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_containers"
+      },
+      {
+        "category": "edge",
+        "pattern": "bars_of_same_height"
+      },
+      {
+        "category": "edge",
+        "pattern": "decreasing_heights"
+      },
+      {
+        "category": "edge",
+        "pattern": "increasing_heights"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_height_bars_in_between"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_array_all_same_height"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_array_alternating_heights"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_array_peak_in_middle"
+      }
+    ]
+  },
+  {
+    "problem_id": "ec6fb91d-6e18-4163-b1c9-16f2dbf527db",
+    "problem_name": "Valid Sudoku",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_board"
+      },
+      {
+        "category": "edge",
+        "pattern": "fully_filled_board_valid"
+      },
+      {
+        "category": "edge",
+        "pattern": "fully_filled_board_invalid_row"
+      },
+      {
+        "category": "edge",
+        "pattern": "fully_filled_board_invalid_col"
+      },
+      {
+        "category": "edge",
+        "pattern": "fully_filled_board_invalid_subgrid"
+      },
+      {
+        "category": "basic",
+        "pattern": "board_with_all_empty_cells"
+      },
+      {
+        "category": "basic",
+        "pattern": "board_with_some_filled_valid"
+      },
+      {
+        "category": "basic",
+        "pattern": "board_with_some_filled_invalid_row"
+      },
+      {
+        "category": "basic",
+        "pattern": "board_with_some_filled_invalid_col"
+      },
+      {
+        "category": "basic",
+        "pattern": "board_with_some_filled_invalid_subgrid"
+      },
+      {
+        "category": "edge",
+        "pattern": "board_with_only_one_digit_repeated"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_filled_cells_valid"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_filled_cells_invalid"
+      }
+    ]
+  },
+  {
+    "problem_id": "2901341f-4ecd-4e0c-9910-9fd5ed061aa2",
+    "problem_name": "Roman to Integer",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_character_roman_numeral_I"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_character_roman_numeral_M"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_addition_only"
+      },
+      {
+        "category": "basic",
+        "pattern": "subtraction_at_end"
+      },
+      {
+        "category": "basic",
+        "pattern": "subtraction_in_middle"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_addition_and_subtraction"
+      },
+      {
+        "category": "edge",
+        "pattern": "largest_valid_roman_numeral"
+      },
+      {
+        "category": "edge",
+        "pattern": "smallest_valid_roman_numeral"
+      },
+      {
+        "category": "stress",
+        "pattern": "roman_numeral_requiring_multiple_subtractions"
+      }
+    ]
+  },
+  {
+    "problem_id": "49734218-309b-4692-9efc-7d1ba4894387",
+    "problem_name": "Climbing Stairs",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "minimum_constraint"
+      },
+      {
+        "category": "edge",
+        "pattern": "maximum_constraint"
+      },
+      {
+        "category": "basic",
+        "pattern": "small_values"
+      },
+      {
+        "category": "basic",
+        "pattern": "intermediate_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "98793b78-1fee-4653-8e15-d9bbfecc3b86",
+    "problem_name": "Palindrome Number",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_digit"
+      },
+      {
+        "category": "edge",
+        "pattern": "negative_number"
+      },
+      {
+        "category": "edge",
+        "pattern": "number_ending_in_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_same_digits"
+      },
+      {
+        "category": "basic",
+        "pattern": "positive_palindrome"
+      },
+      {
+        "category": "basic",
+        "pattern": "positive_non_palindrome"
+      },
+      {
+        "category": "boundary",
+        "pattern": "maximum_integer_value"
+      },
+      {
+        "category": "boundary",
+        "pattern": "minimum_integer_value"
+      }
+    ]
+  },
+  {
+    "problem_id": "2f90e6c0-821c-4dd5-a0bb-7020c53e04c8",
+    "problem_name": "Spiral Matrix",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element_matrix"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_row_matrix"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_column_matrix"
+      },
+      {
+        "category": "basic",
+        "pattern": "square_matrix"
+      },
+      {
+        "category": "basic",
+        "pattern": "rectangular_matrix_m_less_than_n"
+      },
+      {
+        "category": "basic",
+        "pattern": "rectangular_matrix_m_greater_than_n"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_m_and_n"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_m_times_n"
+      }
+    ]
+  },
+  {
+    "problem_id": "5a57d3dc-382f-42c3-95a6-a467eccce3d7",
+    "problem_name": "Longest Palindromic Substring",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_character"
+      },
+      {
+        "category": "edge",
+        "pattern": "string_with_all_same_characters"
+      },
+      {
+        "category": "edge",
+        "pattern": "string_with_no_palindromic_substring_longer_than_1"
+      },
+      {
+        "category": "basic",
+        "pattern": "odd_length_palindrome"
+      },
+      {
+        "category": "basic",
+        "pattern": "even_length_palindrome"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_longest_palindromes"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_length_string"
+      }
+    ]
+  },
+  {
+    "problem_id": "d69a8e08-124d-4c89-84e9-55e5cc5d6aa4",
+    "problem_name": "Add Two Numbers",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_node_lists_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_node_lists_non_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "one_list_is_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "lists_with_carry_over_at_the_end"
+      },
+      {
+        "category": "basic",
+        "pattern": "two_digit_numbers"
+      },
+      {
+        "category": "basic",
+        "pattern": "multi_digit_numbers_no_carry"
+      },
+      {
+        "category": "basic",
+        "pattern": "multi_digit_numbers_with_carry"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_length_lists"
+      }
+    ]
+  },
+  {
+    "problem_id": "3f17773d-872b-421c-9bd6-4e62d6945164",
+    "problem_name": "3Sum",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_zeros"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_same_number"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_positive"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_negative"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_numbers"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_array"
+      },
+      {
+        "category": "boundary",
+        "pattern": "numbers_at_limits"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_duplicates"
+      }
+    ]
+  },
+  {
+    "problem_id": "2d7064ba-1cda-44ef-a59e-08d8d3e6ea2b",
+    "problem_name": "Rotate Image",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element_matrix"
+      },
+      {
+        "category": "basic",
+        "pattern": "even_dimension_matrix"
+      },
+      {
+        "category": "basic",
+        "pattern": "odd_dimension_matrix"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_dimension_matrix"
+      },
+      {
+        "category": "boundary",
+        "pattern": "matrix_with_specific_patterns"
+      }
+    ]
+  },
+  {
+    "problem_id": "73b42576-d890-4914-9eab-8018264a93a9",
+    "problem_name": "Remove Duplicates from Sorted Array",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_duplicates"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_duplicates"
+      },
+      {
+        "category": "basic",
+        "pattern": "some_duplicates"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_array"
+      },
+      {
+        "category": "boundary",
+        "pattern": "numbers_at_limits"
+      }
+    ]
+  },
+  {
+    "problem_id": "609e7697-a75f-45d1-b31e-657b1f66f5e5",
+    "problem_name": "Search in Rotated Sorted Array",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_not_present"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_is_first_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_is_last_element"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_in_first_half"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_in_second_half"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_rotation"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_array"
+      },
+      {
+        "category": "boundary",
+        "pattern": "numbers_at_limits"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_with_target_at_pivot"
+      }
+    ]
+  },
+  {
+    "problem_id": "e31c52cb-e15b-49e0-a7b8-5c4407016a5c",
+    "problem_name": "Merge Two Sorted Lists",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "both_lists_empty"
+      },
+      {
+        "category": "edge",
+        "pattern": "first_list_empty"
+      },
+      {
+        "category": "edge",
+        "pattern": "second_list_empty"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_node_in_each_list"
+      },
+      {
+        "category": "basic",
+        "pattern": "interleaved_lists"
+      },
+      {
+        "category": "basic",
+        "pattern": "one_list_subset_of_other"
+      },
+      {
+        "category": "basic",
+        "pattern": "lists_with_duplicates"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_lists"
+      },
+      {
+        "category": "boundary",
+        "pattern": "numbers_at_limits"
+      }
+    ]
+  },
+  {
+    "problem_id": "2e4c7c6f-19d2-447e-8b73-cfa13a671549",
+    "problem_name": "Sqrt(x)",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "zero_input"
+      },
+      {
+        "category": "edge",
+        "pattern": "max_constraint"
+      },
+      {
+        "category": "basic",
+        "pattern": "perfect_square"
+      },
+      {
+        "category": "basic",
+        "pattern": "non_perfect_square"
+      }
+    ]
+  },
+  {
+    "problem_id": "ff64735d-34e9-4b6c-afb9-d833b5587a31",
+    "problem_name": "Generate Parentheses",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "zero_pairs"
+      },
+      {
+        "category": "edge",
+        "pattern": "max_pairs"
+      },
+      {
+        "category": "basic",
+        "pattern": "small_n"
+      },
+      {
+        "category": "basic",
+        "pattern": "medium_n"
+      }
+    ]
+  },
+  {
+    "problem_id": "85c01f5c-4fad-45f1-b34f-c860bcae8fe1",
+    "problem_name": "Find the Index of the First Occurrence in a String",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_needle"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_haystack"
+      },
+      {
+        "category": "edge",
+        "pattern": "needle_longer_than_haystack"
+      },
+      {
+        "category": "edge",
+        "pattern": "needle_equals_haystack"
+      },
+      {
+        "category": "basic",
+        "pattern": "needle_at_start"
+      },
+      {
+        "category": "basic",
+        "pattern": "needle_at_end"
+      },
+      {
+        "category": "basic",
+        "pattern": "needle_in_middle"
+      },
+      {
+        "category": "basic",
+        "pattern": "needle_not_found"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_haystack_short_needle"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_haystack_long_needle"
+      }
+    ]
+  },
+  {
+    "problem_id": "23e4acc4-511c-44d5-91f1-1511bb9884e6",
+    "problem_name": "Container With Most Water",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "min_elements"
+      },
+      {
+        "category": "edge",
+        "pattern": "max_elements"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_same_height"
+      },
+      {
+        "category": "basic",
+        "pattern": "increasing_heights"
+      },
+      {
+        "category": "basic",
+        "pattern": "decreasing_heights"
+      },
+      {
+        "category": "basic",
+        "pattern": "varying_heights"
+      },
+      {
+        "category": "basic",
+        "pattern": "two_elements"
+      }
+    ]
+  },
+  {
+    "problem_id": "65c419ef-23d6-49e1-a4f2-41f12ddda56d",
+    "problem_name": "Merge k Sorted Lists",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_input_list"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_list_input"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_empty_lists"
+      },
+      {
+        "category": "edge",
+        "pattern": "max_k_lists"
+      },
+      {
+        "category": "basic",
+        "pattern": "interleaved_lists"
+      },
+      {
+        "category": "basic",
+        "pattern": "one_list_much_longer"
+      },
+      {
+        "category": "basic",
+        "pattern": "lists_with_duplicates"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_total_nodes"
+      }
+    ]
+  },
+  {
+    "problem_id": "11be1ef9-fd2d-4738-82dd-3b3b0ccf3710",
+    "problem_name": "Remove Element",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_elements_to_remove"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_elements_to_remove"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_elements"
+      },
+      {
+        "category": "boundary",
+        "pattern": "val_at_beginning"
+      },
+      {
+        "category": "boundary",
+        "pattern": "val_at_end"
+      },
+      {
+        "category": "boundary",
+        "pattern": "val_in_middle"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_many_removals"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_few_removals"
+      }
+    ]
+  },
+  {
+    "problem_id": "485a4a10-3447-45a0-9131-7bec4c7b6155",
+    "problem_name": "Longest Consecutive Sequence",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_consecutive"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_consecutive"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_sequences"
+      },
+      {
+        "category": "basic",
+        "pattern": "duplicates_present"
+      },
+      {
+        "category": "boundary",
+        "pattern": "negative_numbers"
+      },
+      {
+        "category": "boundary",
+        "pattern": "large_numbers"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_long_sequence"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_short_sequences"
+      }
+    ]
+  },
+  {
+    "problem_id": "4930521e-6beb-4ea1-a16e-d2de1a1f8d27",
+    "problem_name": "Linked List Cycle",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_list"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_node_no_cycle"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_node_cycle"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_cycle"
+      },
+      {
+        "category": "basic",
+        "pattern": "cycle_at_beginning"
+      },
+      {
+        "category": "basic",
+        "pattern": "cycle_at_end"
+      },
+      {
+        "category": "basic",
+        "pattern": "cycle_in_middle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "two_nodes_cycle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "two_nodes_no_cycle"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_list_no_cycle"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_list_cycle_at_end"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_list_cycle_near_beginning"
+      }
+    ]
+  },
+  {
+    "problem_id": "c20181fb-88c9-4c58-865b-a2f188083dd8",
+    "problem_name": "Valid Palindrome",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_alphanumeric_character"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_non_alphanumeric_character"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_palindrome_all_alphanumeric"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_non_palindrome_all_alphanumeric"
+      },
+      {
+        "category": "basic",
+        "pattern": "palindrome_with_case_and_symbols"
+      },
+      {
+        "category": "basic",
+        "pattern": "non_palindrome_with_case_and_symbols"
+      },
+      {
+        "category": "boundary",
+        "pattern": "all_same_character_alphanumeric"
+      },
+      {
+        "category": "boundary",
+        "pattern": "all_same_character_non_alphanumeric"
+      },
+      {
+        "category": "boundary",
+        "pattern": "alternating_characters_palindrome"
+      },
+      {
+        "category": "boundary",
+        "pattern": "alternating_characters_non_palindrome"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_string_palindrome"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_string_non_palindrome"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_string_all_non_alphanumeric"
+      }
+    ]
+  },
+  {
+    "problem_id": "ba9a0d92-c2a6-4cdd-b826-dcf6ee11e356",
+    "problem_name": "Divide an Array Into Subarrays With Minimum Cost II",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element_k1"
+      },
+      {
+        "category": "edge",
+        "pattern": "array_length_equal_k"
+      },
+      {
+        "category": "basic",
+        "pattern": "k1"
+      },
+      {
+        "category": "basic",
+        "pattern": "k_equals_array_length"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_case_k2"
+      },
+      {
+        "category": "basic",
+        "pattern": "increasing_costs"
+      },
+      {
+        "category": "basic",
+        "pattern": "decreasing_costs"
+      },
+      {
+        "category": "boundary",
+        "pattern": "all_same_costs_k2"
+      },
+      {
+        "category": "boundary",
+        "pattern": "large_costs"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_k_large"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_k_small"
+      }
+    ]
+  },
+  {
+    "problem_id": "2b5d8779-e334-47cf-8cfa-7e4c65d677d6",
+    "problem_name": "Find the Grid of Region Average",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "grid_size_1x1_k1x1"
+      },
+      {
+        "category": "edge",
+        "pattern": "grid_size_equal_to_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "grid_size_smaller_than_k"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_regions_no_overlap"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_regions_partial_overlap"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_grid_dimension"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_1"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_grid_small_k"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_grid_large_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_same_values"
+      },
+      {
+        "category": "edge",
+        "pattern": "negative_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "d81f01b3-a796-41c9-a040-e46da1127c94",
+    "problem_name": "Maximize the Number of Target Nodes After Connecting Trees I",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "no_common_nodes"
+      },
+      {
+        "category": "basic",
+        "pattern": "some_common_nodes"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_common_nodes"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_tree"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_trees"
+      },
+      {
+        "category": "edge",
+        "pattern": "trees_with_one_node"
+      },
+      {
+        "category": "edge",
+        "pattern": "trees_with_duplicate_values_not_target"
+      },
+      {
+        "category": "edge",
+        "pattern": "trees_with_duplicate_values_target"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_trees"
+      },
+      {
+        "category": "stress",
+        "pattern": "trees_with_many_nodes"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_value_not_present"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_value_present_in_all_trees"
+      }
+    ]
+  },
+  {
+    "problem_id": "936d069e-7998-4af2-9409-333273aad353",
+    "problem_name": "Maximize the Number of Target Nodes After Connecting Trees II",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "overlap_between_trees_at_root"
+      },
+      {
+        "category": "basic",
+        "pattern": "overlap_between_trees_at_internal_nodes"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_overlap_between_trees"
+      },
+      {
+        "category": "edge",
+        "pattern": "one_tree_empty"
+      },
+      {
+        "category": "edge",
+        "pattern": "both_trees_empty"
+      },
+      {
+        "category": "edge",
+        "pattern": "one_tree_single_node"
+      },
+      {
+        "category": "edge",
+        "pattern": "both_trees_single_node_overlap"
+      },
+      {
+        "category": "edge",
+        "pattern": "both_trees_single_node_no_overlap"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_trees"
+      },
+      {
+        "category": "edge",
+        "pattern": "tree_with_negative_values"
+      },
+      {
+        "category": "edge",
+        "pattern": "tree_with_zero_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "cd19af9f-c471-4dcf-9c0e-015315b9c560",
+    "problem_name": "Two Sum",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "basic_case"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_duplicate_numbers"
+      },
+      {
+        "category": "basic",
+        "pattern": "duplicate_numbers_solution_uses_one_duplicate"
+      },
+      {
+        "category": "edge",
+        "pattern": "two_element_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "first_and_last_element_solution"
+      },
+      {
+        "category": "edge",
+        "pattern": "negative_numbers"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_in_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_is_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "large_numbers"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_size"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_numbers_and_large_array"
+      }
+    ]
+  },
+  {
+    "problem_id": "87addd1f-1f44-4056-bfed-e0154cb9f0d9",
+    "problem_name": "Making A Large Island",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "basic_case_with_islands_and_water"
+      },
+      {
+        "category": "basic",
+        "pattern": "grid_fully_land"
+      },
+      {
+        "category": "basic",
+        "pattern": "grid_fully_water"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_cell_grid_land"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_cell_grid_water"
+      },
+      {
+        "category": "edge",
+        "pattern": "grid_with_one_island"
+      },
+      {
+        "category": "edge",
+        "pattern": "grid_with_multiple_disjoint_islands"
+      },
+      {
+        "category": "edge",
+        "pattern": "islands_touching_edges"
+      },
+      {
+        "category": "edge",
+        "pattern": "water_tile_on_edge"
+      },
+      {
+        "category": "edge",
+        "pattern": "water_tile_in_corner"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_grid_many_small_islands"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_grid_one_large_island"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_grid_checkerboard_pattern"
+      }
+    ]
+  },
+  {
+    "problem_id": "4d87779b-97eb-4aef-be98-52e6358be53c",
+    "problem_name": "Remove K Digits",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_num_length"
+      },
+      {
+        "category": "edge",
+        "pattern": "leading_zeros_removal"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_digits_same"
+      },
+      {
+        "category": "basic",
+        "pattern": "general_case"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_input_long_num"
+      }
+    ]
+  },
+  {
+    "problem_id": "3ee496bd-93ff-44e5-bdc2-db55292674c3",
+    "problem_name": "Daily Temperatures",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_warmer_days"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_days_warmer"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_temperatures"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_input_long_array"
+      }
+    ]
+  },
+  {
+    "problem_id": "88533a31-b777-44e3-812c-2ced51bf0b04",
+    "problem_name": "Maximum Difference Between Node and Ancestor",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_tree"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_node_tree"
+      },
+      {
+        "category": "edge",
+        "pattern": "tree_with_negative_values"
+      },
+      {
+        "category": "edge",
+        "pattern": "tree_with_all_same_values"
+      },
+      {
+        "category": "basic",
+        "pattern": "general_tree_structure"
+      },
+      {
+        "category": "stress",
+        "pattern": "deep_tree"
+      },
+      {
+        "category": "stress",
+        "pattern": "wide_tree"
+      }
+    ]
+  },
+  {
+    "problem_id": "3152597f-fc8f-49c1-998f-5a07c8284c1a",
+    "problem_name": "Count Common Words With One Occurrence",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_common_words"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_words_common_but_duplicated"
+      },
+      {
+        "category": "edge",
+        "pattern": "words_appear_once_in_one_text_but_multiple_in_other"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_strings"
+      },
+      {
+        "category": "basic",
+        "pattern": "general_case_with_single_occurrence_common_words"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_texts_many_words"
+      }
+    ]
+  },
+  {
+    "problem_id": "cdfb8939-f269-46ae-a3ff-cb359d7d00b3",
+    "problem_name": "Walking Robot Simulation",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_movement_commands"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_turning_commands"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_forward_commands"
+      },
+      {
+        "category": "edge",
+        "pattern": "return_to_origin"
+      },
+      {
+        "category": "basic",
+        "pattern": "mix_of_movements_and_turns"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_command_string"
+      }
+    ]
+  },
+  {
+    "problem_id": "a81e689f-6ef1-4274-b22f-2cdfdef01d44",
+    "problem_name": "Minimum Time to Make Array Sum At Most x",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_elements_greater_than_x"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_elements_less_than_or_equal_to_x"
+      },
+      {
+        "category": "edge",
+        "pattern": "sum_exactly_x"
+      },
+      {
+        "category": "edge",
+        "pattern": "sum_just_above_x"
+      },
+      {
+        "category": "edge",
+        "pattern": "sum_just_below_x"
+      },
+      {
+        "category": "basic",
+        "pattern": "general_case"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_small_values"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_large_values"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_x_small_array"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_x_large_array"
+      }
+    ]
+  },
+  {
+    "problem_id": "99efcfee-4e23-4ee1-b90f-a2a758441683",
+    "problem_name": "Add Two Integers",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "positive_numbers"
+      },
+      {
+        "category": "basic",
+        "pattern": "negative_numbers"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_sign_numbers"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_and_positive"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_and_negative"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_and_zero"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_int_min_int"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_int_max_int"
+      },
+      {
+        "category": "boundary",
+        "pattern": "min_int_min_int"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_positive"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_negative"
+      }
+    ]
+  },
+  {
+    "problem_id": "d864e631-d6f2-426b-99c3-64dfc23a5da2",
+    "problem_name": "First Missing Positive",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_positive"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_negative"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_negative_numbers"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_zeros"
+      },
+      {
+        "category": "edge",
+        "pattern": "contains_one_but_missing_two"
+      },
+      {
+        "category": "edge",
+        "pattern": "missing_one"
+      },
+      {
+        "category": "basic",
+        "pattern": "consecutive_positives"
+      },
+      {
+        "category": "basic",
+        "pattern": "non_consecutive_positives_with_gaps"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_positive_negative_zero"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_duplicates"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_no_positives"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_all_positives_consecutive"
+      }
+    ]
+  },
+  {
+    "problem_id": "495d97ae-05cf-45c8-8133-202fc5accd87",
+    "problem_name": "Stream of Characters",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_stream_query"
+      },
+      {
+        "category": "edge",
+        "pattern": "query_shorter_than_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "query_longer_than_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "stream_length_equals_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "stream_length_less_than_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "stream_length_greater_than_k"
+      },
+      {
+        "category": "basic",
+        "pattern": "exact_match_at_end"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_match_at_end"
+      },
+      {
+        "category": "basic",
+        "pattern": "partial_match_at_end"
+      },
+      {
+        "category": "basic",
+        "pattern": "repeated_characters_in_stream"
+      },
+      {
+        "category": "basic",
+        "pattern": "repeated_characters_in_query"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_stream_short_query"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_stream_long_query"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_k_operations"
+      }
+    ]
+  },
+  {
+    "problem_id": "6672c671-d05a-4d3c-b8d5-0b97139352fe",
+    "problem_name": "Add Strings",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_strings"
+      },
+      {
+        "category": "edge",
+        "pattern": "one_empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_and_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_and_non_zero"
+      },
+      {
+        "category": "basic",
+        "pattern": "single_digit_addition"
+      },
+      {
+        "category": "basic",
+        "pattern": "multi_digit_addition_no_carry"
+      },
+      {
+        "category": "basic",
+        "pattern": "multi_digit_addition_with_carry"
+      },
+      {
+        "category": "basic",
+        "pattern": "multi_digit_addition_multiple_carries"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_strings"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_strings_with_carries"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_numbers_max_length"
+      }
+    ]
+  },
+  {
+    "problem_id": "0baf5441-76ed-403b-815c-1f5177795407",
+    "problem_name": "Design a Text Editor",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "sequence_of_inserts_and_deletes"
+      },
+      {
+        "category": "basic",
+        "pattern": "interspersed_undo_and_redo"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_operations_list"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_inserts"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_deletes"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_undo"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_redo"
+      },
+      {
+        "category": "edge",
+        "pattern": "undo_without_operations"
+      },
+      {
+        "category": "edge",
+        "pattern": "redo_without_undo"
+      },
+      {
+        "category": "edge",
+        "pattern": "undo_redo_alternation"
+      },
+      {
+        "category": "edge",
+        "pattern": "insert_at_beginning_and_end"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_sequence_of_operations"
+      }
+    ]
+  },
+  {
+    "problem_id": "a19173af-78e1-487c-96c9-075e8ee51ded",
+    "problem_name": "Longest Common Prefix",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "basic_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_input_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_string_input"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_strings_identical"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_common_prefix"
+      },
+      {
+        "category": "edge",
+        "pattern": "prefix_is_entire_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "strings_with_different_lengths"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_length_strings"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_strings"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_strings"
+      }
+    ]
+  },
+  {
+    "problem_id": "17625441-8d76-4b44-9d44-abc15dd8f983",
+    "problem_name": "Evaluate Division",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "basic_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_input_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_bar"
+      },
+      {
+        "category": "edge",
+        "pattern": "two_bars_no_water"
+      },
+      {
+        "category": "edge",
+        "pattern": "two_bars_with_water"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_bars_same_height"
+      },
+      {
+        "category": "edge",
+        "pattern": "decreasing_heights"
+      },
+      {
+        "category": "edge",
+        "pattern": "increasing_heights"
+      },
+      {
+        "category": "boundary",
+        "pattern": "peak_in_middle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "valley_in_middle"
+      },
+      {
+        "category": "basic",
+        "pattern": "uneven_terrain"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_bars"
+      },
+      {
+        "category": "stress",
+        "pattern": "bars_with_zero_height"
+      },
+      {
+        "category": "stress",
+        "pattern": "bars_with_maximum_height"
+      }
+    ]
+  },
+  {
+    "problem_id": "1775d7ef-ffc5-4713-8429-0ad8a1919a48",
+    "problem_name": "Trapping Rain Water",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "basic_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_completed_orders_and_pending_orders"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_completed_orders"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_pending_orders"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_pending_orders_canceled"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_completed_orders_canceled"
+      },
+      {
+        "category": "basic",
+        "pattern": "mix_of_positive_and_negative_orders"
+      },
+      {
+        "category": "basic",
+        "pattern": "cancellations_exceed_initial_orders"
+      },
+      {
+        "category": "boundary",
+        "pattern": "order_cancellation_idempotency"
+      },
+      {
+        "category": "boundary",
+        "pattern": "cancellation_of_nonexistent_order"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_number_of_orders"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_magnitude_orders"
+      }
+    ]
+  },
+  {
+    "problem_id": "14ff5877-6334-4784-af17-fec96848c276",
+    "problem_name": "Number of Orders in the Backlog",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "basic_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_equations_and_queries"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_equations"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_queries"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_equation_single_query"
+      },
+      {
+        "category": "edge",
+        "pattern": "query_for_variable_not_in_equations"
+      },
+      {
+        "category": "edge",
+        "pattern": "query_a_div_a"
+      },
+      {
+        "category": "edge",
+        "pattern": "query_a_div_b_and_b_div_a"
+      },
+      {
+        "category": "basic",
+        "pattern": "chain_of_equations"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_independent_equation_chains"
+      },
+      {
+        "category": "basic",
+        "pattern": "transitive_queries"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_number_of_equations_and_queries"
+      },
+      {
+        "category": "stress",
+        "pattern": "queries_requiring_long_path_traversal"
+      }
+    ]
+  },
+  {
+    "problem_id": "483d3fdf-78e9-41bf-a75b-71298a08cc7d",
+    "problem_name": "Boundary of Binary Tree",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_node_tree"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_left_children"
+      },
+      {
+        "category": "edge",
+        "pattern": "only_right_children"
+      },
+      {
+        "category": "edge",
+        "pattern": "full_tree"
+      },
+      {
+        "category": "edge",
+        "pattern": "skewed_tree_left"
+      },
+      {
+        "category": "edge",
+        "pattern": "skewed_tree_right"
+      },
+      {
+        "category": "basic",
+        "pattern": "example_cases"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_tree"
+      }
+    ]
+  },
+  {
+    "problem_id": "0de2e9a3-9392-4e86-a4d2-808750782e60",
+    "problem_name": "Coin Change",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "example_cases"
+      },
+      {
+        "category": "edge",
+        "pattern": "amount_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_solution"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_coin_type"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_coins_large_denomination"
+      },
+      {
+        "category": "edge",
+        "pattern": "amount_equals_a_coin"
+      },
+      {
+        "category": "edge",
+        "pattern": "amount_slightly_more_than_a_coin"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_amount_many_coins"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_amount_few_coins"
+      }
+    ]
+  },
+  {
+    "problem_id": "e494f662-7bb8-4551-b981-6024d2cf24c9",
+    "problem_name": "Add Two Numbers II",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "example_cases"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_digit_numbers"
+      },
+      {
+        "category": "edge",
+        "pattern": "one_list_is_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_carry_over"
+      },
+      {
+        "category": "edge",
+        "pattern": "carry_over_at_every_digit"
+      },
+      {
+        "category": "edge",
+        "pattern": "lists_of_different_lengths"
+      },
+      {
+        "category": "stress",
+        "pattern": "very_long_lists_causing_large_sum"
+      }
+    ]
+  },
+  {
+    "problem_id": "b04f5bc2-f448-4d8d-8641-195f41d1d126",
+    "problem_name": "Text Justification",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "example_cases"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_word"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_words_fit_on_one_line"
+      },
+      {
+        "category": "edge",
+        "pattern": "last_line_justification"
+      },
+      {
+        "category": "edge",
+        "pattern": "maxWidth_equals_longest_word"
+      },
+      {
+        "category": "edge",
+        "pattern": "maxWidth_smaller_than_longest_word"
+      },
+      {
+        "category": "edge",
+        "pattern": "many_short_words"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_words"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_words_and_tight_maxWidth"
+      }
+    ]
+  },
+  {
+    "problem_id": "2debac74-a20e-49e0-85e6-cc10aaff02ab",
+    "problem_name": "Find Words That Can Be Formed by Characters",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "example_cases"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_words_list"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_chars_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_words_can_be_formed"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_words_can_be_formed"
+      },
+      {
+        "category": "edge",
+        "pattern": "word_requires_exact_characters"
+      },
+      {
+        "category": "edge",
+        "pattern": "chars_string_has_duplicate_characters"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_words_list"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_chars_string"
+      },
+      {
+        "category": "stress",
+        "pattern": "words_with_many_repeated_characters"
+      }
+    ]
+  },
+  {
+    "problem_id": "e8720e69-e919-4126-8be5-2129b45fb8db",
+    "problem_name": "Ransom Note",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_strings"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_character_strings"
+      },
+      {
+        "category": "basic",
+        "pattern": "ransom_note_possible"
+      },
+      {
+        "category": "basic",
+        "pattern": "ransom_note_not_possible"
+      },
+      {
+        "category": "edge",
+        "pattern": "ransom_note_longer_than_magazine"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_strings_possible"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_strings_not_possible"
+      },
+      {
+        "category": "basic",
+        "pattern": "exact_match"
+      },
+      {
+        "category": "edge",
+        "pattern": "magazine_empty"
+      },
+      {
+        "category": "edge",
+        "pattern": "ransom_note_empty"
+      }
+    ]
+  },
+  {
+    "problem_id": "9413a9b7-900a-4dfd-9d34-57742e784bba",
+    "problem_name": "Valid Sudoku",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "valid_sudoku"
+      },
+      {
+        "category": "sample",
+        "pattern": "invalid_sudoku_row"
+      },
+      {
+        "category": "sample",
+        "pattern": "invalid_sudoku_column"
+      },
+      {
+        "category": "sample",
+        "pattern": "invalid_sudoku_subgrid"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_board"
+      },
+      {
+        "category": "edge",
+        "pattern": "board_with_only_dots"
+      },
+      {
+        "category": "edge",
+        "pattern": "full_board_valid"
+      },
+      {
+        "category": "edge",
+        "pattern": "full_board_invalid"
+      },
+      {
+        "category": "basic",
+        "pattern": "partially_filled_board_valid"
+      },
+      {
+        "category": "basic",
+        "pattern": "partially_filled_board_invalid"
+      }
+    ]
+  },
+  {
+    "problem_id": "d0164f19-2c92-4b74-856c-8a0da67619a5",
+    "problem_name": "Number of Islands",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "multiple_islands"
+      },
+      {
+        "category": "sample",
+        "pattern": "single_island"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_grid"
+      },
+      {
+        "category": "edge",
+        "pattern": "grid_all_water"
+      },
+      {
+        "category": "edge",
+        "pattern": "grid_all_land"
+      },
+      {
+        "category": "basic",
+        "pattern": "single_row_grid"
+      },
+      {
+        "category": "basic",
+        "pattern": "single_column_grid"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_grid_sparse_islands"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_grid_dense_islands"
+      },
+      {
+        "category": "edge",
+        "pattern": "checkerboard_pattern"
+      }
+    ]
+  },
+  {
+    "problem_id": "d9ef4b34-8fe4-4319-b9fa-53ae0a81f6c4",
+    "problem_name": "Subdomain Visit Count",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "multiple_domains_multiple_logs"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_log_entry"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_domain_multiple_logs"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_logs_array"
+      },
+      {
+        "category": "basic",
+        "pattern": "complex_domain_hierarchy"
+      },
+      {
+        "category": "basic",
+        "pattern": "overlapping_domains"
+      },
+      {
+        "category": "stress",
+        "pattern": "maximum_logs"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_domain_names"
+      },
+      {
+        "category": "edge",
+        "pattern": "domain_with_same_name_different_counts"
+      },
+      {
+        "category": "negative",
+        "pattern": "invalid_log_format"
+      }
+    ]
+  },
+  {
+    "problem_id": "0e6f700f-ec53-4724-b4d3-576820f7f5d7",
+    "problem_name": "Word Search II",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "words_found_on_board"
+      },
+      {
+        "category": "sample",
+        "pattern": "no_words_found_on_board"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_board_empty_words"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_board_non_empty_words"
+      },
+      {
+        "category": "edge",
+        "pattern": "non_empty_board_empty_words"
+      },
+      {
+        "category": "basic",
+        "pattern": "single_cell_board_single_word"
+      },
+      {
+        "category": "basic",
+        "pattern": "words_sharing_letters"
+      },
+      {
+        "category": "basic",
+        "pattern": "words_with_repeated_letters_in_grid"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_board_many_words"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_words"
+      },
+      {
+        "category": "edge",
+        "pattern": "board_with_all_same_characters"
+      },
+      {
+        "category": "edge",
+        "pattern": "words_that_are_prefixes_of_other_words"
+      }
+    ]
+  },
+  {
+    "problem_id": "3c9b26ce-d2b3-4343-99f3-34f75d27abd1",
+    "problem_name": "Course Schedule II",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_prerequisites"
+      },
+      {
+        "category": "edge",
+        "pattern": "circular_dependency"
+      },
+      {
+        "category": "edge",
+        "pattern": "linear_chain_dependency"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_independent_components"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_courses"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_prerequisites"
+      }
+    ]
+  },
+  {
+    "problem_id": "a158e1bd-e2ee-47d4-afde-7d4c2e7e0d88",
+    "problem_name": "Jump Game",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "can_reach_last_index_in_one_jump"
+      },
+      {
+        "category": "edge",
+        "pattern": "cannot_reach_last_index_even_with_max_jumps"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_zeros_except_first"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_zeros_at_end"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_jump_lengths"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_size"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_jump_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "8c4bb630-6ffb-4da5-8124-603310edeca7",
+    "problem_name": "Subarray With Elements Greater Than Varying Threshold",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_nums_single_threshold"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_nums_multiple_thresholds"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_nums"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_thresholds"
+      },
+      {
+        "category": "edge",
+        "pattern": "nums_shorter_than_thresholds"
+      },
+      {
+        "category": "edge",
+        "pattern": "thresholds_shorter_than_nums"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_elements_qualify"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_elements_qualify"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_qualifying_and_non_qualifying"
+      },
+      {
+        "category": "basic",
+        "pattern": "circular_threshold_matching"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_nums_and_thresholds"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_values_in_nums_and_thresholds"
+      }
+    ]
+  },
+  {
+    "problem_id": "82a9c027-1823-4278-8fbd-05c95f5cbb17",
+    "problem_name": "Implement Trie (Prefix Tree)",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_trie"
+      },
+      {
+        "category": "edge",
+        "pattern": "insert_and_search_empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "insert_and_search_single_character"
+      },
+      {
+        "category": "basic",
+        "pattern": "insert_multiple_words_search_exact"
+      },
+      {
+        "category": "basic",
+        "pattern": "insert_multiple_words_search_prefix"
+      },
+      {
+        "category": "basic",
+        "pattern": "search_non_existent_word"
+      },
+      {
+        "category": "basic",
+        "pattern": "search_prefix_of_non_existent_word"
+      },
+      {
+        "category": "edge",
+        "pattern": "words_with_shared_prefixes"
+      },
+      {
+        "category": "edge",
+        "pattern": "words_that_are_prefixes_of_other_words"
+      },
+      {
+        "category": "stress",
+        "pattern": "insert_many_long_words"
+      },
+      {
+        "category": "stress",
+        "pattern": "search_many_words_and_prefixes"
+      }
+    ]
+  },
+  {
+    "problem_id": "b604ecb7-51f6-46cb-890a-30eaa0dfbccf",
+    "problem_name": "Reaching Points",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "edge",
+        "pattern": "start_equals_target"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_smaller_than_start_x"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_smaller_than_start_y"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_equal_to_start_x_but_larger_y"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_equal_to_start_y_but_larger_x"
+      },
+      {
+        "category": "basic",
+        "pattern": "reach_target_in_few_steps"
+      },
+      {
+        "category": "basic",
+        "pattern": "target_reachable_but_requires_reverse_thinking"
+      },
+      {
+        "category": "edge",
+        "pattern": "start_point_large_target_small"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_coordinates_requiring_many_steps"
+      },
+      {
+        "category": "stress",
+        "pattern": "start_point_1_1_target_large"
+      }
+    ]
+  },
+  {
+    "problem_id": "d6d6056d-6959-4447-aba5-c840c2dabecd",
+    "problem_name": "LRU Cache",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "cache_capacity_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "cache_full_then_get"
+      },
+      {
+        "category": "edge",
+        "pattern": "cache_full_then_put_eviction"
+      },
+      {
+        "category": "edge",
+        "pattern": "repeated_gets_no_put"
+      },
+      {
+        "category": "edge",
+        "pattern": "repeated_puts_no_get"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_get_put_operations"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_calls_max_capacity"
+      }
+    ]
+  },
+  {
+    "problem_id": "5e096088-c6fc-41ad-9764-0e3fbdea9814",
+    "problem_name": "Roman to Integer",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "simple_roman_numerals"
+      },
+      {
+        "category": "edge",
+        "pattern": "smallest_value_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "largest_value_3999"
+      },
+      {
+        "category": "edge",
+        "pattern": "subtractive_notation_only"
+      },
+      {
+        "category": "edge",
+        "pattern": "additive_notation_only"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_additive_subtractive"
+      },
+      {
+        "category": "stress",
+        "pattern": "longest_valid_roman_numeral"
+      }
+    ]
+  },
+  {
+    "problem_id": "cc3acf9b-9881-4775-9bba-bc076e42e93b",
+    "problem_name": "Candy",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "increasing_ratings"
+      },
+      {
+        "category": "basic",
+        "pattern": "decreasing_ratings"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_ratings_peaks"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_ratings_valleys"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_student"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_students_same_rating"
+      },
+      {
+        "category": "edge",
+        "pattern": "alternating_ratings_high_low"
+      },
+      {
+        "category": "edge",
+        "pattern": "alternating_ratings_low_high"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_students_varying_ratings"
+      }
+    ]
+  },
+  {
+    "problem_id": "a2864a7c-1561-41a1-a7fa-4ed5958cb3c5",
+    "problem_name": "LFU Cache",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "cache_capacity_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "cache_full_then_get_miss"
+      },
+      {
+        "category": "edge",
+        "pattern": "cache_full_then_put_evict_lfu"
+      },
+      {
+        "category": "edge",
+        "pattern": "cache_full_then_put_evict_lru_tiebreak"
+      },
+      {
+        "category": "edge",
+        "pattern": "repeated_gets_same_frequency"
+      },
+      {
+        "category": "edge",
+        "pattern": "repeated_puts_changing_frequency"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_get_put_operations"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_calls_max_capacity"
+      }
+    ]
+  },
+  {
+    "problem_id": "8b604c63-7089-4200-ae01-7c462d0c5107",
+    "problem_name": "Maximum Swap",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "simple_swap_for_max"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_swap_needed_descending"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_swap_needed_already_max"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_digit_number"
+      },
+      {
+        "category": "edge",
+        "pattern": "number_with_leading_zeros_implicit"
+      },
+      {
+        "category": "edge",
+        "pattern": "swap_most_significant_digit"
+      },
+      {
+        "category": "edge",
+        "pattern": "swap_least_significant_digit"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_swaps_possible_choose_best"
+      },
+      {
+        "category": "stress",
+        "pattern": "largest_possible_number_max_digits"
+      }
+    ]
+  },
+  {
+    "problem_id": "22774a5b-6c7e-4f6f-807f-4014d21c0da2",
+    "problem_name": "Two Sum",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "basic",
+        "pattern": "two_elements_sum_to_target"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_is_sum_of_min_and_max"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_is_sum_of_two_equal_elements_if_allowed"
+      },
+      {
+        "category": "edge",
+        "pattern": "target_requires_first_and_last_element"
+      },
+      {
+        "category": "boundary",
+        "pattern": "array_with_minimum_length"
+      },
+      {
+        "category": "boundary",
+        "pattern": "array_with_maximum_length"
+      },
+      {
+        "category": "boundary",
+        "pattern": "elements_are_min_possible_value"
+      },
+      {
+        "category": "boundary",
+        "pattern": "elements_are_max_possible_value"
+      },
+      {
+        "category": "boundary",
+        "pattern": "elements_are_zero"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_with_random_values"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array_with_duplicates"
+      }
+    ]
+  },
+  {
+    "problem_id": "1fe1d75b-f73d-4b3e-8b52-061e25142a73",
+    "problem_name": "Find Median from Data Stream",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "basic",
+        "pattern": "add_few_numbers_then_find_median"
+      },
+      {
+        "category": "edge",
+        "pattern": "add_single_number_then_find_median"
+      },
+      {
+        "category": "edge",
+        "pattern": "add_two_numbers_then_find_median"
+      },
+      {
+        "category": "boundary",
+        "pattern": "add_minimum_number_of_elements"
+      },
+      {
+        "category": "boundary",
+        "pattern": "add_maximum_number_of_elements"
+      },
+      {
+        "category": "boundary",
+        "pattern": "add_elements_all_same_value"
+      },
+      {
+        "category": "boundary",
+        "pattern": "add_elements_min_max_possible_values"
+      },
+      {
+        "category": "stress",
+        "pattern": "add_large_number_of_elements_sequentially"
+      },
+      {
+        "category": "stress",
+        "pattern": "add_large_number_of_elements_randomly"
+      }
+    ]
+  },
+  {
+    "problem_id": "cd7a3357-27ce-4d5d-be02-8442bc61516c",
+    "problem_name": "Time Needed to Buy Tickets",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_counters_have_same_people"
+      },
+      {
+        "category": "edge",
+        "pattern": "one_counter_with_people_others_empty"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_counters_empty"
+      },
+      {
+        "category": "edge",
+        "pattern": "one_person_at_one_counter"
+      },
+      {
+        "category": "boundary",
+        "pattern": "minimum_number_of_counters"
+      },
+      {
+        "category": "boundary",
+        "pattern": "maximum_number_of_counters"
+      },
+      {
+        "category": "boundary",
+        "pattern": "minimum_people_at_all_counters"
+      },
+      {
+        "category": "boundary",
+        "pattern": "maximum_people_at_all_counters"
+      },
+      {
+        "category": "boundary",
+        "pattern": "minimum_time_per_ticket"
+      },
+      {
+        "category": "boundary",
+        "pattern": "maximum_time_per_ticket"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_counters_with_varying_people"
+      }
+    ]
+  },
+  {
+    "problem_id": "2575de61-9a29-436f-bc30-d79d4042c170",
+    "problem_name": "Longest Cycle in a Graph",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "basic",
+        "pattern": "graph_with_a_single_cycle"
+      },
+      {
+        "category": "basic",
+        "pattern": "graph_with_multiple_cycles_of_different_lengths"
+      },
+      {
+        "category": "edge",
+        "pattern": "graph_with_no_cycles"
+      },
+      {
+        "category": "edge",
+        "pattern": "graph_with_a_self_loop"
+      },
+      {
+        "category": "edge",
+        "pattern": "disconnected_graph_with_cycles_in_different_components"
+      },
+      {
+        "category": "edge",
+        "pattern": "graph_with_only_two_nodes_forming_a_cycle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "graph_with_minimum_nodes_and_a_cycle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "graph_with_maximum_nodes_and_a_cycle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "graph_with_maximum_edges_and_a_cycle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "graph_with_all_nodes_in_a_single_cycle"
+      },
+      {
+        "category": "stress",
+        "pattern": "dense_graph_with_a_long_cycle"
+      },
+      {
+        "category": "stress",
+        "pattern": "sparse_graph_with_a_long_cycle"
+      }
+    ]
+  },
+  {
+    "problem_id": "7165991c-d275-4cfd-b5eb-6ca203e4d165",
+    "problem_name": "Operations on Tree",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "provided_examples"
+      },
+      {
+        "category": "basic",
+        "pattern": "insert_and_search_existing"
+      },
+      {
+        "category": "basic",
+        "pattern": "insert_and_search_non_existing"
+      },
+      {
+        "category": "basic",
+        "pattern": "insert_delete_and_search"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_tree_search"
+      },
+      {
+        "category": "edge",
+        "pattern": "insert_delete_root"
+      },
+      {
+        "category": "edge",
+        "pattern": "delete_leaf_node"
+      },
+      {
+        "category": "edge",
+        "pattern": "delete_node_with_one_child"
+      },
+      {
+        "category": "edge",
+        "pattern": "delete_node_with_two_children"
+      },
+      {
+        "category": "boundary",
+        "pattern": "insert_maximum_elements"
+      },
+      {
+        "category": "boundary",
+        "pattern": "insert_elements_in_sorted_order_increasing"
+      },
+      {
+        "category": "boundary",
+        "pattern": "insert_elements_in_sorted_order_decreasing"
+      },
+      {
+        "category": "boundary",
+        "pattern": "delete_all_elements"
+      },
+      {
+        "category": "stress",
+        "pattern": "alternating_insert_delete_search_operations"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_insertions_followed_by_searches"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_deletions_on_a_populated_tree"
+      }
+    ]
+  },
+  {
+    "problem_id": "18b8dbe8-387c-4072-8af1-887311393cca",
+    "problem_name": "Trapping Rain Water",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "uniform_height"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_height_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "b0576c36-2cee-41e1-b466-ebcc3c3993c1",
+    "problem_name": "Move Zeroes",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "all_zeroes"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_zeroes"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_zeroes"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "extreme_value_range"
+      }
+    ]
+  },
+  {
+    "problem_id": "f33b2637-8191-46f9-a3af-7e6a48bb245f",
+    "problem_name": "Add Two Numbers",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_node_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "different_lengths"
+      },
+      {
+        "category": "basic",
+        "pattern": "carry_over"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes"
+      },
+      {
+        "category": "stress",
+        "pattern": "all_nines_carry"
+      }
+    ]
+  },
+  {
+    "problem_id": "2438b409-7bd3-4bb0-97f2-de13274cac74",
+    "problem_name": "Largest Number",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "all_zeroes"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "basic",
+        "pattern": "varying_digit_lengths"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_value_numbers"
+      }
+    ]
+  },
+  {
+    "problem_id": "8f2ad039-7474-4915-80a3-15b5c466d4e3",
+    "problem_name": "Remove Zero Sum Consecutive Nodes from Linked List",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_list"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_zero_node"
+      },
+      {
+        "category": "basic",
+        "pattern": "middle_zero_sum_sequence"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes"
+      },
+      {
+        "category": "stress",
+        "pattern": "alternating_large_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "e88f1a62-f8f3-4f2f-bcf2-943fc939b5c4",
+    "problem_name": "Reverse Odd Levels of Binary Tree",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "two_levels"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes_100"
+      }
+    ]
+  },
+  {
+    "problem_id": "49f80cbf-5456-413e-aa25-59d180d5cc23",
+    "problem_name": "Maximum Twin Sum of a Linked List",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "minimal_length"
+      },
+      {
+        "category": "basic",
+        "pattern": "even_length_small"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_100k"
+      },
+      {
+        "category": "negative",
+        "pattern": "contains_negative_values"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_magnitude_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "d4780333-8c94-4e0d-8da2-e7b3676e1880",
+    "problem_name": "Find Bottom Left Tree Value",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_node"
+      },
+      {
+        "category": "basic",
+        "pattern": "full_binary_tree"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes_10k"
+      },
+      {
+        "category": "edge",
+        "pattern": "left_skewed"
+      },
+      {
+        "category": "edge",
+        "pattern": "right_skewed"
+      }
+    ]
+  },
+  {
+    "problem_id": "77728a15-ae14-469b-ab7b-3aabf3ed902c",
+    "problem_name": "Count Pairs Whose Sum is Less than Target",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "minimal_array"
+      },
+      {
+        "category": "basic",
+        "pattern": "sorted_array"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_10k"
+      },
+      {
+        "category": "negative",
+        "pattern": "array_with_negatives"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_pairs_valid"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_pairs_valid"
+      }
+    ]
+  },
+  {
+    "problem_id": "f873e393-3724-4e66-bb47-d8ede8f80327",
+    "problem_name": "Merge Nodes in Between Zeros",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "only_zeros"
+      },
+      {
+        "category": "basic",
+        "pattern": "single_segment"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes_10k"
+      },
+      {
+        "category": "edge",
+        "pattern": "leading_and_trailing_zeros"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_length_segment"
+      }
+    ]
+  },
+  {
+    "problem_id": "2cbacdc2-299a-4400-818d-abb2005dcf5d",
+    "problem_name": "Best Time to Buy and Sell Stock",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "increasing_prices"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "decreasing_prices_no_profit"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_alternating"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random_input"
+      }
+    ]
+  },
+  {
+    "problem_id": "bceba95a-a64d-418c-9201-f8dd7fa1f710",
+    "problem_name": "Number of Good Leaf Nodes Pairs",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "small_tree_two_leaves_within_d"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_node_tree"
+      },
+      {
+        "category": "edge",
+        "pattern": "d_zero_no_pairs"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes_balanced_tree"
+      },
+      {
+        "category": "stress",
+        "pattern": "deep_tree_with_max_distance"
+      }
+    ]
+  },
+  {
+    "problem_id": "eece8dfb-4043-4fef-9e09-95ce07ca40e1",
+    "problem_name": "Find the Minimum and Maximum Number of Nodes Between Critical Points",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "multiple_critical_points"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_critical_points"
+      },
+      {
+        "category": "edge",
+        "pattern": "adjacent_critical_points"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_linked_list"
+      },
+      {
+        "category": "stress",
+        "pattern": "random_large_list"
+      }
+    ]
+  },
+  {
+    "problem_id": "2537faed-d056-4569-8eae-acb0ea8a2de2",
+    "problem_name": "Find the Substring With Maximum Cost",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "all_positive_costs"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_character"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_negative_costs"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_string"
+      },
+      {
+        "category": "stress",
+        "pattern": "alternating_positive_negative"
+      }
+    ]
+  },
+  {
+    "problem_id": "f7160516-b624-4f78-89b3-e0a97c9b9222",
+    "problem_name": "Construct Smallest Number From DI String",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "alternating_ID_pattern"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_I_characters"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_D_characters"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_DI_string"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random_DI_pattern"
+      }
+    ]
+  },
+  {
+    "problem_id": "e57ccd59-d73f-4cc8-9081-2d1ec3c39c5c",
+    "problem_name": "Minimum Swaps to Group All 1's Together II",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_zeros"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_ones"
+      },
+      {
+        "category": "basic",
+        "pattern": "already_grouped"
+      },
+      {
+        "category": "basic",
+        "pattern": "alternating_pattern"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_random"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_mixed"
+      }
+    ]
+  },
+  {
+    "problem_id": "ee9389a0-2efa-4683-9085-bfa8ec128ef5",
+    "problem_name": "Longest Substring Without Repeating Characters",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_character"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_unique"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_same"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_unique"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_random_mixed"
+      }
+    ]
+  },
+  {
+    "problem_id": "4a0626ec-177a-41d6-83ce-54d4e933e279",
+    "problem_name": "Reverse Nodes in k-Group",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_list"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_greater_than_length"
+      },
+      {
+        "category": "basic",
+        "pattern": "length_multiple_of_k"
+      },
+      {
+        "category": "basic",
+        "pattern": "length_not_multiple_of_k"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_list_random_k"
+      }
+    ]
+  },
+  {
+    "problem_id": "51f5bd61-fd54-4919-bff4-39abb422efad",
+    "problem_name": "Count Good Nodes in Binary Tree",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_node"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_decreasing"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_increasing"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes_balanced"
+      },
+      {
+        "category": "stress",
+        "pattern": "deep_skewed_tree"
+      }
+    ]
+  },
+  {
+    "problem_id": "280efc48-b179-4a33-86cd-b2d5b6495baf",
+    "problem_name": "Trim a Binary Search Tree",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_node_in_range"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_node_out_of_range"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_within_range"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_below_range"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_above_range"
+      },
+      {
+        "category": "boundary",
+        "pattern": "large_tree_random_range"
+      },
+      {
+        "category": "stress",
+        "pattern": "deep_unbalanced_tree"
+      }
+    ]
+  },
+  {
+    "problem_id": "f648c030-d186-4069-82ef-de92eb4a1dad",
+    "problem_name": "Check if Every Row and Column Contains All Numbers",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "duplicate_in_row"
+      },
+      {
+        "category": "edge",
+        "pattern": "duplicate_in_col"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_size"
+      },
+      {
+        "category": "basic",
+        "pattern": "valid_small"
+      }
+    ]
+  },
+  {
+    "problem_id": "7dcb1b82-dee5-4364-87c7-1cc58895e20b",
+    "problem_name": "Word Search",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_letter_word"
+      },
+      {
+        "category": "edge",
+        "pattern": "word_longer_than_grid"
+      },
+      {
+        "category": "basic",
+        "pattern": "word_exists_horizontally"
+      },
+      {
+        "category": "basic",
+        "pattern": "word_exists_vertically"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_grid_size"
+      },
+      {
+        "category": "stress",
+        "pattern": "many_backtracking_paths"
+      }
+    ]
+  },
+  {
+    "problem_id": "4968ff4d-28bd-4c5f-8a82-36d27aa81c4d",
+    "problem_name": "Maximal Square",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "all_zeros"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_ones"
+      },
+      {
+        "category": "basic",
+        "pattern": "small_mixed"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_dimensions"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_sparse"
+      }
+    ]
+  },
+  {
+    "problem_id": "01180b6c-e4bc-4398-9ac8-d7cab2db9f8f",
+    "problem_name": "Alert Using Same Key-Card Three or More Times in a One Hour Period",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "exactly_three_in_one_hour"
+      },
+      {
+        "category": "edge",
+        "pattern": "three_spread_over_more_than_one_hour"
+      },
+      {
+        "category": "basic",
+        "pattern": "single_employee"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_logs"
+      },
+      {
+        "category": "negative",
+        "pattern": "no_alerts"
+      }
+    ]
+  },
+  {
+    "problem_id": "fcb22074-ed94-447d-a9f9-787a96de745d",
+    "problem_name": "Course Schedule",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "no_prerequisites"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_course"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_acyclic"
+      },
+      {
+        "category": "edge",
+        "pattern": "simple_cycle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_courses_and_prereqs"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_dag"
+      }
+    ]
+  },
+  {
+    "problem_id": "8ed6bf6e-c651-4bcc-b277-d840ffd2ec78",
+    "problem_name": "Find Closest Node to Given Two Nodes",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_node"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_common_reachable"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_linear"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_edges"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_dense"
+      }
+    ]
+  },
+  {
+    "problem_id": "b74accdf-d916-49a5-a756-cd686f4c2b78",
+    "problem_name": "Node With Highest Edge Score",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "simple_cycle"
+      },
+      {
+        "category": "edge",
+        "pattern": "tie_break_smallest_index"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_n"
+      },
+      {
+        "category": "edge",
+        "pattern": "self_loop"
+      },
+      {
+        "category": "stress",
+        "pattern": "uniform_scores"
+      }
+    ]
+  },
+  {
+    "problem_id": "94afb5de-a71f-4634-b01d-b03d5f87b9d0",
+    "problem_name": "Longest Subsequence With Decreasing Adjacent Difference",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "increasing_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_equal"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "negative",
+        "pattern": "negative_numbers"
+      },
+      {
+        "category": "stress",
+        "pattern": "alternating_large_small"
+      }
+    ]
+  },
+  {
+    "problem_id": "c91ba13a-8119-42cf-a9ea-61b06a0f1f99",
+    "problem_name": "Set Matrix Zeroes",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "single_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_zero"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_dimensions"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random"
+      }
+    ]
+  },
+  {
+    "problem_id": "064d3e04-f610-482a-8c84-ec70b1a4141a",
+    "problem_name": "Longest Substring Without Repeating Characters",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "typical_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_unique"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_same"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_random_ascii"
+      }
+    ]
+  },
+  {
+    "problem_id": "47b9d3b6-7c05-46eb-bd7e-bbcd50a7602a",
+    "problem_name": "Largest Color Value in a Directed Graph",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_from_statement"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_node"
+      },
+      {
+        "category": "edge",
+        "pattern": "graph_with_cycle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes_1e5"
+      },
+      {
+        "category": "stress",
+        "pattern": "dense_graph_large_n"
+      }
+    ]
+  },
+  {
+    "problem_id": "af0016df-8520-4925-b4bf-c1db1700e478",
+    "problem_name": "Shortest Path in a Weighted Tree",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_from_statement"
+      },
+      {
+        "category": "edge",
+        "pattern": "two_node_tree"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_weight_edge"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes_1e5"
+      },
+      {
+        "category": "stress",
+        "pattern": "deep_chain_tree"
+      }
+    ]
+  },
+  {
+    "problem_id": "0ab4840d-f77b-4d81-984a-cfc6733639cd",
+    "problem_name": "Sliding Window Maximum",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_from_statement"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_1"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_n"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_1e5"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random_array"
+      }
+    ]
+  },
+  {
+    "problem_id": "fed2591e-908b-4a57-b02e-646543096584",
+    "problem_name": "Word Ladder",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_with_path"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_transformation_possible"
+      },
+      {
+        "category": "edge",
+        "pattern": "begin_equals_end"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_wordlist_5000"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_dictionary_long_chain"
+      }
+    ]
+  },
+  {
+    "problem_id": "ee70c7f7-82a5-48a2-820b-09e7d5dacd34",
+    "problem_name": "Maximum Points in an Archery Competition",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_from_statement"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_circle"
+      },
+      {
+        "category": "edge",
+        "pattern": "arrows_less_than_circles"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_points_100_and_arrows_100"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_length_100_large_arrows"
+      }
+    ]
+  },
+  {
+    "problem_id": "eb7c29f4-0b8a-40b2-bddf-107f400fc030",
+    "problem_name": "Minimum Moves to Reach Target with Rotations",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element_grid"
+      },
+      {
+        "category": "edge",
+        "pattern": "start_equals_target"
+      },
+      {
+        "category": "boundary",
+        "pattern": "start_at_corner_target_opposite_corner"
+      },
+      {
+        "category": "basic",
+        "pattern": "small_grid_2x2"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_grid_100x100"
+      }
+    ]
+  },
+  {
+    "problem_id": "80bb4ee7-1117-421c-ae77-f0305d087e88",
+    "problem_name": "Palindrome Number",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_digit"
+      },
+      {
+        "category": "negative",
+        "pattern": "negative_number"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_int_palindrome"
+      },
+      {
+        "category": "basic",
+        "pattern": "positive_palindrome"
+      },
+      {
+        "category": "basic",
+        "pattern": "positive_non_palindrome"
+      }
+    ]
+  },
+  {
+    "problem_id": "60f91cff-2c91-49ed-bd07-e75836962237",
+    "problem_name": "Diagonal Traverse",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element_matrix"
+      },
+      {
+        "category": "basic",
+        "pattern": "square_matrix_3x3"
+      },
+      {
+        "category": "basic",
+        "pattern": "rectangular_more_rows"
+      },
+      {
+        "category": "basic",
+        "pattern": "rectangular_more_columns"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_dimensions_100x100"
+      }
+    ]
+  },
+  {
+    "problem_id": "67eb8ab4-4653-4cbe-b217-8773422edda3",
+    "problem_name": "Random Pick with Weight",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_weight"
+      },
+      {
+        "category": "basic",
+        "pattern": "uniform_weights"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_weights_length_10000"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_weights_and_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "a0d50129-4e2f-4da5-9ddd-86aa15156dc0",
+    "problem_name": "N-Queens II",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "n_equals_1"
+      },
+      {
+        "category": "edge",
+        "pattern": "n_equals_2_no_solution"
+      },
+      {
+        "category": "edge",
+        "pattern": "n_equals_3_no_solution"
+      },
+      {
+        "category": "basic",
+        "pattern": "n_equals_4"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_n_15"
+      }
+    ]
+  },
+  {
+    "problem_id": "d5ba16d8-ee9d-4d6a-86ab-2e35afcba217",
+    "problem_name": "Diagonal Traverse II",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_row"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_column"
+      },
+      {
+        "category": "edge",
+        "pattern": "ragged_matrix"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_dimensions"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_matrix"
+      }
+    ]
+  },
+  {
+    "problem_id": "86a1e573-059a-4d39-adaa-664c90c0d7eb",
+    "problem_name": "First Missing Positive",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_negative"
+      },
+      {
+        "category": "edge",
+        "pattern": "duplicate_values"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random"
+      }
+    ]
+  },
+  {
+    "problem_id": "4269ac81-4211-40d7-96af-ee2f5cfac9bc",
+    "problem_name": "Generate Parentheses",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "minimal_n"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_n"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_combinations"
+      }
+    ]
+  },
+  {
+    "problem_id": "88d86273-fd5b-4f05-8988-968d3f3bdb32",
+    "problem_name": "Longest Increasing Subsequence",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_equal"
+      },
+      {
+        "category": "edge",
+        "pattern": "strictly_decreasing"
+      },
+      {
+        "category": "edge",
+        "pattern": "already_increasing"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_size"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random"
+      }
+    ]
+  },
+  {
+    "problem_id": "05a6b844-c004-4ce5-9e4e-0980c9588fc9",
+    "problem_name": "Find the Sum of Encrypted Integers",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_letters"
+      },
+      {
+        "category": "edge",
+        "pattern": "digits_only"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_list_size"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_string_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_dataset"
+      }
+    ]
+  },
+  {
+    "problem_id": "ddf6a3b4-c17d-4bef-8a46-8f732a80b46f",
+    "problem_name": "Longest Strictly Increasing or Strictly Decreasing Subarray",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "mixed_increase_decrease"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_equal_elements"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_strictly_increasing"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_strictly_decreasing"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random_array"
+      }
+    ]
+  },
+  {
+    "problem_id": "d3f973ca-f08a-4e7c-8918-965c706c95a5",
+    "problem_name": "Smallest String With A Given Numeric Value",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "typical_feasible_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "minimum_n_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "maximum_n_minimum_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_character_string"
+      },
+      {
+        "category": "boundary",
+        "pattern": "maximum_length_k_100"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_k_random_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "51fbf782-c01f-4f5e-9897-8c71a5ad1244",
+    "problem_name": "The Number of Good Subsets",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "mixed_coprime_noncoprime"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_elements_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_elements_share_factor"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_20_all_pairwise_coprime"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_length_20_all_primes"
+      }
+    ]
+  },
+  {
+    "problem_id": "0647c018-275f-4a63-88dd-114182348dd0",
+    "problem_name": "Groups of Strings",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "standard_anagram_groups"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_character_strings"
+      },
+      {
+        "category": "edge",
+        "pattern": "identical_strings"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_words_1000_length_100"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_small_groups"
+      }
+    ]
+  },
+  {
+    "problem_id": "b467b1d5-d798-4fc4-aaf6-ed59fcebc412",
+    "problem_name": "Minimum Operations to Make Array Values Equal to K",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "small_array_simple_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "already_equal_to_k"
+      },
+      {
+        "category": "edge",
+        "pattern": "negative_values_and_k"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_10000_extreme_values"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random_array"
+      }
+    ]
+  },
+  {
+    "problem_id": "54857de8-2094-42e7-95e8-4dbc91d58d6d",
+    "problem_name": "Collect Coins in a Tree",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_node"
+      },
+      {
+        "category": "edge",
+        "pattern": "skewed_left"
+      },
+      {
+        "category": "edge",
+        "pattern": "skewed_right"
+      },
+      {
+        "category": "basic",
+        "pattern": "balanced_tree"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes"
+      }
+    ]
+  },
+  {
+    "problem_id": "1badaba5-1f05-4e8c-942e-caec9e6f9a33",
+    "problem_name": "Maximum Number of Balls in a Box",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "smallest_input"
+      },
+      {
+        "category": "edge",
+        "pattern": "triangular_number"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_input"
+      }
+    ]
+  },
+  {
+    "problem_id": "1248bef5-11fd-4c51-9c61-248f48a109dc",
+    "problem_name": "Valid Parentheses",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "simple_pair"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_string"
+      },
+      {
+        "category": "negative",
+        "pattern": "incorrect_closing"
+      }
+    ]
+  },
+  {
+    "problem_id": "86ac3696-4336-48b6-a921-f989a44f7769",
+    "problem_name": "Longest Unequal Adjacent Groups Subsequence II",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "all_same"
+      },
+      {
+        "category": "basic",
+        "pattern": "alternating"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      }
+    ]
+  },
+  {
+    "problem_id": "a3913306-3c03-4b18-a9cb-f1d3dfb2daa7",
+    "problem_name": "Longest Subarray With Maximum Bitwise AND",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "basic",
+        "pattern": "all_equal"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_n"
+      }
+    ]
+  },
+  {
+    "problem_id": "2996ddfd-cc0c-41cd-8d24-e0455bbc1053",
+    "problem_name": "Longest Unequal Adjacent Groups Subsequence I",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_same"
+      },
+      {
+        "category": "basic",
+        "pattern": "already_alternating"
+      }
+    ]
+  },
+  {
+    "problem_id": "9b52fd35-a2d8-44bc-a40d-886cbd1b533d",
+    "problem_name": "Trapping Rain Water",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "monotonic_increasing"
+      },
+      {
+        "category": "basic",
+        "pattern": "typical_valley"
+      }
+    ]
+  },
+  {
+    "problem_id": "f2a4ce2c-8926-409e-a81f-30c2387b98f9",
+    "problem_name": "Zigzag Conversion",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_character"
+      },
+      {
+        "category": "edge",
+        "pattern": "numRows_one"
+      },
+      {
+        "category": "basic",
+        "pattern": "numRows_greater_than_length"
+      }
+    ]
+  },
+  {
+    "problem_id": "5d23685c-5443-4c58-97df-304165aebc47",
+    "problem_name": "Lexicographically Minimum String After Removing Stars",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "all_stars"
+      },
+      {
+        "category": "edge",
+        "pattern": "star_at_start"
+      },
+      {
+        "category": "basic",
+        "pattern": "no_stars"
+      }
+    ]
+  },
+  {
+    "problem_id": "1011ed37-fadc-45a9-93c2-e5995be72c3f",
+    "problem_name": "Clear Digits",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "n_zero"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_digits_removed"
+      },
+      {
+        "category": "basic",
+        "pattern": "mix_digits"
+      }
+    ]
+  },
+  {
+    "problem_id": "17dbc30e-061d-496d-a2a9-867682202d0c",
+    "problem_name": "Valid Parentheses",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "simple_match"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_all_valid"
+      },
+      {
+        "category": "negative",
+        "pattern": "invalid_order"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_length_mixed"
+      }
+    ]
+  },
+  {
+    "problem_id": "0829a719-21c7-42d2-93d1-3e058583776b",
+    "problem_name": "Two Sum",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "positive_numbers"
+      },
+      {
+        "category": "edge",
+        "pattern": "minimum_size"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "negative",
+        "pattern": "negative_numbers"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random"
+      }
+    ]
+  },
+  {
+    "problem_id": "888b5247-c34d-490c-b766-3196a1cf3812",
+    "problem_name": "Longest Substring Without Repeating Characters",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "all_unique"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_same"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random"
+      }
+    ]
+  },
+  {
+    "problem_id": "f7663f21-7f56-43d0-8186-440bcb4e81fd",
+    "problem_name": "Letter Combinations of a Phone Number",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "single_digit"
+      },
+      {
+        "category": "edge",
+        "pattern": "two_digits"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_4"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_combinations"
+      }
+    ]
+  },
+  {
+    "problem_id": "3db43736-5513-4908-98b4-74ff3ff1b4da",
+    "problem_name": "Best Time to Buy and Sell Stock",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "increasing_prices"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_day"
+      },
+      {
+        "category": "edge",
+        "pattern": "decreasing_prices"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random"
+      }
+    ]
+  },
+  {
+    "problem_id": "f40bc8f1-4a56-4280-a983-aa3057b8a982",
+    "problem_name": "Find Minimum in Rotated Sorted Array",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_duplicates"
+      },
+      {
+        "category": "boundary",
+        "pattern": "no_rotation"
+      },
+      {
+        "category": "boundary",
+        "pattern": "full_rotation"
+      },
+      {
+        "category": "basic",
+        "pattern": "typical_rotated"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_array"
+      }
+    ]
+  },
+  {
+    "problem_id": "7754c543-70cb-45b9-ad12-d70f90e701f9",
+    "problem_name": "Maximum Product of Three Numbers",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "exact_three"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_signs"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_negative"
+      },
+      {
+        "category": "edge",
+        "pattern": "contains_zero"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_size_extremes"
+      }
+    ]
+  },
+  {
+    "problem_id": "d881e4d3-c76e-49b2-af0a-2421434937d1",
+    "problem_name": "LRU Cache",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_sequence"
+      },
+      {
+        "category": "edge",
+        "pattern": "capacity_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "get_missing"
+      },
+      {
+        "category": "basic",
+        "pattern": "update_existing"
+      },
+      {
+        "category": "stress",
+        "pattern": "high_operation_count"
+      }
+    ]
+  },
+  {
+    "problem_id": "60cf0d6f-1254-4131-a5c9-8d50f1ee463f",
+    "problem_name": "Percentage of Users Attended a Contest",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "zero_registered"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_attended"
+      },
+      {
+        "category": "basic",
+        "pattern": "typical_case"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_registered"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_lists"
+      }
+    ]
+  },
+  {
+    "problem_id": "747a52e8-e03f-4ccb-8d35-bd44c62d490f",
+    "problem_name": "Number of Ways to Paint N × 3 Grid",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "n_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "n_two"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_n"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_n_modulo"
+      }
+    ]
+  },
+  {
+    "problem_id": "f8d09fe3-0c40-418d-93e0-9695b598ed08",
+    "problem_name": "Valid Palindrome II",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_character"
+      },
+      {
+        "category": "edge",
+        "pattern": "two_characters_mismatch"
+      },
+      {
+        "category": "basic",
+        "pattern": "already_palindrome"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_all_same"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_length_one_mismatch"
+      }
+    ]
+  },
+  {
+    "problem_id": "61d5fbfa-1963-4559-9b23-96e5c668babe",
+    "problem_name": "Construct String With Repeat Limit",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "simple_possible_arrangement"
+      },
+      {
+        "category": "edge",
+        "pattern": "maxCount_one_impossible"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_character_string"
+      },
+      {
+        "category": "boundary",
+        "pattern": "length_100_maxCount_50"
+      },
+      {
+        "category": "stress",
+        "pattern": "length_100_random_distribution"
+      }
+    ]
+  },
+  {
+    "problem_id": "7915e3d9-5a8c-4622-8f7f-f61343adc446",
+    "problem_name": "The Number of Full Rounds You Have Played",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element_array"
+      },
+      {
+        "category": "basic",
+        "pattern": "one_full_round_typical"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_full_round_missing_rounds"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_100k_multiple_full_rounds"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_length_100k_random_order"
+      }
+    ]
+  },
+  {
+    "problem_id": "18a99b6b-50e8-44bc-9482-874e803fbf1d",
+    "problem_name": "Gas Station",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_station_sufficient"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_station_insufficient"
+      },
+      {
+        "category": "basic",
+        "pattern": "standard_feasible_circuit"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_N_total_gas_equals_total_cost"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_N_alternating_gas_cost"
+      }
+    ]
+  },
+  {
+    "problem_id": "b411d45c-3870-47dc-a669-35dd85824ae3",
+    "problem_name": "LRU Cache",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "capacity_one_eviction"
+      },
+      {
+        "category": "basic",
+        "pattern": "typical_sequence_of_get_put"
+      },
+      {
+        "category": "negative",
+        "pattern": "get_nonexistent_key"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_number_of_operations"
+      },
+      {
+        "category": "sample",
+        "pattern": "initial_puts_and_gets"
+      }
+    ]
+  },
+  {
+    "problem_id": "0c7970a4-6259-466c-b076-ba880317d34e",
+    "problem_name": "Maximize Sum of Weights after Edge Removals",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_edge"
+      },
+      {
+        "category": "edge",
+        "pattern": "tree_structure"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_cycle"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_nodes"
+      },
+      {
+        "category": "stress",
+        "pattern": "dense_graph"
+      }
+    ]
+  },
+  {
+    "problem_id": "90957942-3e50-41f6-8f51-08614eb605fc",
+    "problem_name": "IPO",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_capital"
+      },
+      {
+        "category": "edge",
+        "pattern": "zero_cost_projects"
+      },
+      {
+        "category": "basic",
+        "pattern": "typical_case"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_projects"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_input"
+      }
+    ]
+  },
+  {
+    "problem_id": "928b340a-b96d-438f-ba27-a5b52a156035",
+    "problem_name": "First Missing Positive",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_array"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_negative"
+      },
+      {
+        "category": "edge",
+        "pattern": "consecutive_start_one"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_size_random"
+      }
+    ]
+  },
+  {
+    "problem_id": "344a2d87-345c-48a4-bbbe-4d77092601e7",
+    "problem_name": "LFU Cache",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_case"
+      },
+      {
+        "category": "basic",
+        "pattern": "capacity_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "get_nonexistent"
+      },
+      {
+        "category": "edge",
+        "pattern": "update_existing"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_capacity_operations"
+      },
+      {
+        "category": "stress",
+        "pattern": "high_operation_count"
+      }
+    ]
+  },
+  {
+    "problem_id": "024e9c0c-98ad-4369-99f0-dd3e5f3e1e74",
+    "problem_name": "Sliding Window Maximum",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_length"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_array_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_alternating_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "0b95d8da-56b2-45fd-b879-1bdcc8b24cc9",
+    "problem_name": "Number of Connected Components in an Undirected Graph",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_edges"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_edge"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_components"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_edges"
+      }
+    ]
+  },
+  {
+    "problem_id": "4a02e08c-7e0a-4537-b385-4e302ed55203",
+    "problem_name": "Minimum Path Sum",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "single_cell"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_row"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_column"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_grid"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "3288bae2-0c43-405c-876b-5daa665c98ee",
+    "problem_name": "LRU Cache",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "sample_sequence"
+      },
+      {
+        "category": "edge",
+        "pattern": "capacity_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "get_missing"
+      },
+      {
+        "category": "edge",
+        "pattern": "eviction"
+      },
+      {
+        "category": "stress",
+        "pattern": "high_operation_count"
+      }
+    ]
+  },
+  {
+    "problem_id": "745d5d82-7623-4b1d-88b2-541324ed78a7",
+    "problem_name": "Last Visited Integers",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "simple_case"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_unique"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_duplicates"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_pages"
+      }
+    ]
+  },
+  {
+    "problem_id": "0419a66c-b1a7-4f4d-96c9-c4813ddbd46c",
+    "problem_name": "Widest Vertical Area Between Two Points Containing No Points",
+    "test_strategy": [
+      {
+        "category": "basic",
+        "pattern": "two_points"
+      },
+      {
+        "category": "edge",
+        "pattern": "duplicate_x"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_same_x"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_range"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_n"
+      }
+    ]
+  },
+  {
+    "problem_id": "0072ec57-5172-426d-a1e5-645deec11155",
+    "problem_name": "Dot Product of Two Sparse Vectors",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_zero"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_signs"
+      }
+    ]
+  },
+  {
+    "problem_id": "102d49bc-e3e7-481c-9e54-407f34ff84d8",
+    "problem_name": "Degree of an Array",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_same"
+      },
+      {
+        "category": "edge",
+        "pattern": "multiple_max_frequency"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_size"
+      },
+      {
+        "category": "basic",
+        "pattern": "negative_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "2cacd410-e392-4161-ac79-8037e45fa4d3",
+    "problem_name": "Lowest Common Ancestor of a Binary Tree",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "ancestor_self"
+      },
+      {
+        "category": "edge",
+        "pattern": "same_node"
+      },
+      {
+        "category": "edge",
+        "pattern": "root_only"
+      },
+      {
+        "category": "stress",
+        "pattern": "deep_skewed_tree"
+      },
+      {
+        "category": "basic",
+        "pattern": "balanced_tree"
+      }
+    ]
+  },
+  {
+    "problem_id": "49b1be7e-c523-4d0a-85bc-f7237cd0ec4a",
+    "problem_name": "Minimum Cost to Set Cooking Time",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "already_target"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_values"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "bced4416-8f86-4558-b4f2-e078b8844f29",
+    "problem_name": "Minimum Remove to Make Valid Parentheses",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_invalid"
+      },
+      {
+        "category": "edge",
+        "pattern": "already_valid"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_parentheses"
+      },
+      {
+        "category": "stress",
+        "pattern": "long_complex_string"
+      }
+    ]
+  },
+  {
+    "problem_id": "11fae436-a225-42d2-af1b-908b1db00dc3",
+    "problem_name": "Concatenation of Array",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_n"
+      },
+      {
+        "category": "basic",
+        "pattern": "normal_case"
+      },
+      {
+        "category": "negative",
+        "pattern": "negative_numbers"
+      }
+    ]
+  },
+  {
+    "problem_id": "7684a029-0db2-4351-8269-f4566a5101da",
+    "problem_name": "Evaluate Division",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "self_query"
+      },
+      {
+        "category": "edge",
+        "pattern": "unknown_variable"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_chain"
+      },
+      {
+        "category": "negative",
+        "pattern": "disconnected_graph"
+      }
+    ]
+  },
+  {
+    "problem_id": "d4c996bb-0610-41d7-a310-92783247a3d2",
+    "problem_name": "Valid Parentheses",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_pair"
+      },
+      {
+        "category": "edge",
+        "pattern": "mismatched"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "basic",
+        "pattern": "nested_correct"
+      }
+    ]
+  },
+  {
+    "problem_id": "e763a4e7-2dd3-417a-8782-a40ad310675d",
+    "problem_name": "Number of Visible People in a Queue",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_person"
+      },
+      {
+        "category": "basic",
+        "pattern": "increasing_heights"
+      },
+      {
+        "category": "edge",
+        "pattern": "decreasing_heights"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_n"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_random"
+      }
+    ]
+  },
+  {
+    "problem_id": "711e8212-9458-4eab-befd-dc1d4cf905cc",
+    "problem_name": "Car Fleet",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_car"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_fleet"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_n"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_input"
+      }
+    ]
+  },
+  {
+    "problem_id": "4c5e0468-e7fd-4fe8-84ea-b0f977d1b4d9",
+    "problem_name": "Employee Free Time",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_employee"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_interval_per_employee"
+      },
+      {
+        "category": "boundary",
+        "pattern": "no_free_time"
+      },
+      {
+        "category": "basic",
+        "pattern": "multiple_employees_multiple_intervals"
+      }
+    ]
+  },
+  {
+    "problem_id": "ac49cd67-b14d-401a-9357-cd8593206523",
+    "problem_name": "Maximum Number of Potholes That Can Be Fixed",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_pothole"
+      },
+      {
+        "category": "edge",
+        "pattern": "k_equals_one"
+      },
+      {
+        "category": "boundary",
+        "pattern": "k_exceeds_all_sizes"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_sizes"
+      }
+    ]
+  },
+  {
+    "problem_id": "c1219923-874a-4755-a6a7-e91e0e2a7b53",
+    "problem_name": "Largest Palindromic Number",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "all_same_digit"
+      },
+      {
+        "category": "basic",
+        "pattern": "mixed_digits_with_center"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_50"
+      }
+    ]
+  },
+  {
+    "problem_id": "e012e4ba-c791-47f5-9e8c-b75a437efe68",
+    "problem_name": "Number of Steps to Reduce a Number in Binary Representation to One",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "num_is_one"
+      },
+      {
+        "category": "edge",
+        "pattern": "num_is_power_of_two"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_int_value"
+      },
+      {
+        "category": "basic",
+        "pattern": "odd_and_even_mix"
+      }
+    ]
+  },
+  {
+    "problem_id": "bfeb2c11-4c05-424c-a852-e08363a87211",
+    "problem_name": "Integer to Roman",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "minimum_value"
+      },
+      {
+        "category": "edge",
+        "pattern": "maximum_value"
+      },
+      {
+        "category": "basic",
+        "pattern": "value_with_subtractive_notation"
+      },
+      {
+        "category": "basic",
+        "pattern": "standard_value"
+      }
+    ]
+  },
+  {
+    "problem_id": "6d3903ee-2d07-423f-8543-d9d71cd678cc",
+    "problem_name": "Valid Sudoku",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example"
+      },
+      {
+        "category": "edge",
+        "pattern": "empty_board"
+      },
+      {
+        "category": "edge",
+        "pattern": "duplicate_in_row"
+      },
+      {
+        "category": "edge",
+        "pattern": "duplicate_in_column"
+      },
+      {
+        "category": "edge",
+        "pattern": "duplicate_in_subbox"
+      }
+    ]
+  },
+  {
+    "problem_id": "5ef0c258-b0e0-4b5d-ad0f-1daf3942cc36",
+    "problem_name": "Coin Change",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example"
+      },
+      {
+        "category": "basic",
+        "pattern": "single_coin_exact"
+      },
+      {
+        "category": "basic",
+        "pattern": "single_coin_insufficient"
+      },
+      {
+        "category": "edge",
+        "pattern": "amount_zero"
+      },
+      {
+        "category": "boundary",
+        "pattern": "amount_max_boundary"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_amount_many_coins"
+      }
+    ]
+  },
+  {
+    "problem_id": "f328acc1-4da6-44d4-80aa-ec6b9325c0b8",
+    "problem_name": "Best Time to Buy and Sell Stock with Cooldown",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_day"
+      },
+      {
+        "category": "edge",
+        "pattern": "all_decreasing_prices"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length_prices"
+      },
+      {
+        "category": "stress",
+        "pattern": "alternating_prices_large"
+      }
+    ]
+  },
+  {
+    "problem_id": "45cf2d42-1ccc-40b7-b62d-075c8865cf4e",
+    "problem_name": "Number of Spaces Cleaning Robot Cleaned",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_cell_dirt"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_cell_clean"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_grid_size"
+      },
+      {
+        "category": "stress",
+        "pattern": "full_dirt_grid"
+      }
+    ]
+  },
+  {
+    "problem_id": "3007c3d4-cd02-43a4-a35a-f4ceb72fa713",
+    "problem_name": "Path with Maximum Gold",
+    "test_strategy": [
+      {
+        "category": "sample",
+        "pattern": "example"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_row"
+      },
+      {
+        "category": "edge",
+        "pattern": "single_column"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_grid_dimensions"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_grid_high_values"
+      }
+    ]
+  },
+  {
+    "problem_id": "c02d2fd4-1a70-4359-a5f7-d297e7b436d6",
+    "problem_name": "Boundary of Binary Tree",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_node"
+      },
+      {
+        "category": "edge",
+        "pattern": "left_skewed"
+      },
+      {
+        "category": "edge",
+        "pattern": "right_skewed"
+      },
+      {
+        "category": "basic",
+        "pattern": "balanced_small"
+      },
+      {
+        "category": "boundary",
+        "pattern": "only_leaves"
+      }
+    ]
+  },
+  {
+    "problem_id": "d2b94ca3-a019-410f-88b8-552705ba5563",
+    "problem_name": "Count of Smaller Numbers After Self",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "single_element"
+      },
+      {
+        "category": "edge",
+        "pattern": "duplicates"
+      },
+      {
+        "category": "basic",
+        "pattern": "increasing"
+      },
+      {
+        "category": "basic",
+        "pattern": "decreasing"
+      },
+      {
+        "category": "negative",
+        "pattern": "includes_negative_numbers"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_n"
+      }
+    ]
+  },
+  {
+    "problem_id": "0c7bdc48-6581-4483-b00d-b1438a69cb79",
+    "problem_name": "Decode String",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "empty_string"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_brackets"
+      },
+      {
+        "category": "basic",
+        "pattern": "simple_repeat"
+      },
+      {
+        "category": "edge",
+        "pattern": "nested_repeat"
+      },
+      {
+        "category": "boundary",
+        "pattern": "large_multiplier"
+      },
+      {
+        "category": "stress",
+        "pattern": "max_length"
+      }
+    ]
+  },
+  {
+    "problem_id": "c403323f-924d-409a-95bc-dd89fbb9101d",
+    "problem_name": "Move Zeroes",
+    "test_strategy": [
+      {
+        "category": "edge",
+        "pattern": "all_zeroes"
+      },
+      {
+        "category": "edge",
+        "pattern": "no_zeroes"
+      },
+      {
+        "category": "basic",
+        "pattern": "zero_at_start"
+      },
+      {
+        "category": "basic",
+        "pattern": "zero_at_end"
+      },
+      {
+        "category": "boundary",
+        "pattern": "max_length"
+      },
+      {
+        "category": "stress",
+        "pattern": "large_mixed"
+      }
+    ]
+  }
+]
